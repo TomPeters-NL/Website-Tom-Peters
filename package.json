@@ -1,0 +1,14 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "The personal website for Tom Peters, MSc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Peters",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
