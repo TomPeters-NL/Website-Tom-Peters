@@ -1,0 +1,14 @@
+:root {
+    --main-color: #282B34;
+    --secondary-color: #888DAA;
+    --header-color: #FFFFFF;
+    --hover-color: #888DAA;
+    --text-color: #FFFFFF;
+    --emphasis-color-purple: #C27DFF;
+    --emphasis-color-green: #9BFF9A;
+    --emphasis-color-red: #FF7D7D;
+}
+
+body {
+    background-color: var(--main-color);
+}
