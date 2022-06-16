@@ -13,3 +13,11 @@ body {
     background-color: var(--main-color);
     color: var(--text-color);
 }
+
+h1 {
+    font-family: 'Montserrat-Regular';
+}
+
+p {
+    font-family: 'Lora';
+}
