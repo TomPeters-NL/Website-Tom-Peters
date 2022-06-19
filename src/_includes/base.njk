@@ -9,10 +9,16 @@
 
     <link rel="stylesheet" href="{{ '/css/font.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
+    {% block stylesheet %}{% endblock stylesheet %}
 </head>
 
 <body>
-    {% block content %}{% endblock content %}
+    {% block navbar %}
+    {% include "navigation-bar.njk" %}
+    {% endblock navbar %}
+    <div id="content-container">
+        {% block content %}{% endblock content %}
+    </div>
 </body>
 
 </html>
