@@ -1,6 +1,7 @@
 #homepage {
-    width: 80vw;
     text-align: center;
+
+    margin-top: 7.5vh;
 }
 
 #homepage-header, #homepage-logo-container, #homepage-navbar, #homepage-socials {
