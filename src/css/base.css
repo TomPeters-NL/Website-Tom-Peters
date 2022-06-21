@@ -5,6 +5,7 @@
 :root {
     --main-color: #282B34;
     --secondary-color: #888DAA;
+    --secondary-color-transparent: rgba(136, 141, 170, 0.1);
     --header-color: #FFFFFF;
     --hover-color: #888DAA;
     --text-color: #FFFFFF;
@@ -22,13 +23,18 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
 
     background-color: var(--main-color);
     color: var(--text-color);
 
     font-family: 'Lora';
     font-size: 18pt;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
 }
 
 h1 {

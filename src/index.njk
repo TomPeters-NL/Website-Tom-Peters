@@ -1,5 +1,9 @@
 {% extends "base.njk" %}
 
+{% block title %}
+Tom Peters, MSc.
+{% endblock title %}
+
 {% block stylesheet %}
 <link rel="stylesheet" href="{{ '/css/homepage.css' | url }}">
 {% endblock stylesheet %}
@@ -16,7 +20,6 @@
     <div id="homepage-logo-container">
         <img id="homepage-logo" src="/img/Sigil.svg" alt="A personal logo.">
     </div>
-
     <div id="homepage-navbar">
         <div class="homepage-navbar-item">
             <a class="homepage-link" href="{{ '/about-me' | url }}">About Me</a>
@@ -34,8 +37,9 @@
 
     <div id="homepage-socials">
         <a class="homepage-link" href="https://www.linkedin.com/in/1992-tom-peters/" target="_blank" rel="noopener noreferrer">
-            <img id="homepage-linkedin" src="/img/Linkedin.svg" alt="The LinkedIn logo.">
-        </a>
+            <img id="homepage-linkedin" src="/img/Linkedin.svg" alt="The LinkedIn logo."></a>
     </div>
 </div>
 {% endblock content %}
+
+{% block footer %}{% endblock footer %}

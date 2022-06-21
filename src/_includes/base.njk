@@ -1,3 +1,5 @@
+{% import 'macro.njk' as macro %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>{% block title %}{% endblock title %}</title>
 
     <link rel="stylesheet" href="{{ '/css/font.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
+
     {% block stylesheet %}{% endblock stylesheet %}
 </head>
 
@@ -16,9 +20,14 @@
     {% block navbar %}
     {% include "navigation-bar.njk" %}
     {% endblock navbar %}
+
     <div id="content-container">
         {% block content %}{% endblock content %}
     </div>
+
+    {% block footer %}
+        <footer></footer>
+    {% endblock footer %}
 </body>
 
 </html>
