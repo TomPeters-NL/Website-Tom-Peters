@@ -1,0 +1,66 @@
+.company-experience {
+    display: flex;
+}
+
+.company-logo-container, .company-logo {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.company-logo-link:hover, .company-project-link:hover {
+    transition: 0.25s;
+    filter: brightness(0.75);
+}
+
+.company-story {
+    margin-left: 2.5em;
+}
+
+.company-header {
+    height: 2.5em;
+
+    display:  flex;
+    align-items: center;
+}
+
+.company-period {
+    font-family: 'Montserrat-Ultra-Light-Italic';
+    font-size: 20pt;
+
+    margin-left: 1em;
+}
+
+.company-projects {
+    display: flex;
+
+    margin-left: auto;
+}
+
+.company-project-logo-container {
+    margin-left: 0.5em;
+}
+
+.company-project-logo {
+    width: 1em;
+    height: 1em;
+}
+
+.company-description {
+    text-align: justify;
+
+    margin-top: 1em;
+}
+
+.company-description > span {
+    color: var(--emphasis-color-purple);
+}
+
+.timeline {
+    height: 7.5vh;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: calc(50% - (0.5 * 0.25em));
+
+    border-left: solid 0.25em var(--secondary-color-transparent);
+}

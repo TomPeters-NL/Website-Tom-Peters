@@ -1,0 +1,7 @@
+{% macro experienceProject(name, icon, link) %}
+<div class="company-project-logo-container">
+    <a class="company-project-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+        <img class="company-project-logo" src="/img/{{ icon }}" alt="The logo for {{ name }}">
+    </a>
+</div>
+{% endmacro %}
