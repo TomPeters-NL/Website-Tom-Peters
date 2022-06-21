@@ -40,6 +40,8 @@ footer {
 h1 {
     font-family: 'Montserrat-Heavy';
     font-size: 40pt;
+
+    margin-bottom: 1em;
 }
 
 h2 {
