@@ -8,7 +8,6 @@
 }
 
 .company-logo-link:hover, .company-project-link:hover {
-    transition: 0.25s;
     filter: brightness(0.75);
 }
 

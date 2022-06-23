@@ -1,5 +1,97 @@
 {% extends "base.njk" %}
 
+{% block title %}
+Tom Peters, MSc. | Projects
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ '/css/projects.css' | url }}">
+{% endblock stylesheet %}
+
 {% block content %}
-These are all my projects!
+<h1>Projects</h1>
+
+{#################}
+{# TomPeters.Dev #}
+{#################}
+
+{% set description %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
+tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
+accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
+nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('HTML', 'https://html.spec.whatwg.org/multipage/') }}
+{{ macro.projectSkillIcon('CSS', 'https://www.w3.org/Style/CSS/Overview.en.html') }}
+{{ macro.projectSkillIcon('JavaScript', 'https://www.javascript.com/') }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Code', 'https://gitlab.com/Extarion/personal-website', true) }}
+{{ macro.projectLinkIcon('Application', 'https://www.tompeters.dev/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.tompeters.dev/') }}
+{% endset %}
+
+{{ macro.project('TomPeters.Dev', 'Self', 'Full-stack Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{################}
+{# CardBoard CX #}
+{################}
+
+{% set description %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
+tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
+accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
+nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('YouTube', 'https://youtu.be/kb9zWmBVpHY') }}
+{{ macro.projectLinkIcon('Application', 'https://app.cardboard.cx/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('CardBoard CX', '3Fiftynine', 'Back-end Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{###############}
+{# Branches CX #}
+{###############}
+
+{% set description %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
+tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
+accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
+nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('YouTube', 'https://youtu.be/qP3bQn7uXpk') }}
+{{ macro.projectLinkIcon('Application', 'https://app.branches.cx/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('Branches CX', '3Fiftynine', 'Back-end Developer', description, skills, links) }}
 {% endblock content %}}
