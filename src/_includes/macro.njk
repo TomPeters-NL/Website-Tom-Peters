@@ -1,3 +1,38 @@
+{##############}
+{# Experience #}
+{##############}
+
+{% macro experience(name, link, icon, role, period, projects, description, pngIcon = false) %}
+<div class="company-experience">
+    <div class="company-logo-container">
+        <a class="company-logo-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+            {% if pngIcon %}
+            <img class="company-logo" src="/img/Logo-{{ icon }}.png" alt="The company logo for {{ name }}.">
+            {% else %}
+            <img class="company-logo" src="/img/Logo-{{ icon }}.svg" alt="The company logo for {{ name }}.">
+            {% endif %}
+        </a>
+    </div>
+    <div class="company-story">
+        <div class="company-header">
+            <div class="company-name">
+                <h2>{{ name }}</h2>
+            </div>
+            <div class="company-period">{{ period }}</div>
+            <div class="company-projects">
+                {{ projects | safe }}
+            </div>
+        </div>
+        <div class="company-subheader">
+            <h2>{{ role }}</h2>
+        </div>
+        <div class="company-description">
+            {{ description | safe }}
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
 {% macro experienceProject(name, icon, link) %}
 <div class="company-project-logo-container">
     <a class="company-project-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
@@ -5,6 +40,10 @@
     </a>
 </div>
 {% endmacro %}
+
+{############}
+{# Projects #}
+{############}
 
 {% macro project(title, company, role, description, skills, links) %}
 <div class="project">
