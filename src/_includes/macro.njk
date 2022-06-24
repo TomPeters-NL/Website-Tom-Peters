@@ -46,7 +46,7 @@
 {############}
 
 {% macro project(title, company, role, description, skills, links) %}
-<div class="project">
+<div class="project" id="project-{{ title | replace(' ', '-') }}">
     <div class="project-header">
         <div class="project-name">
             <h2><span class="emphasis-purple">{{ title }}</span></h2>

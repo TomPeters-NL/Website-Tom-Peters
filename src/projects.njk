@@ -16,16 +16,19 @@ Tom Peters, MSc. | Projects
 {#################}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+A personal website project, which would serve as an exercise and an online home to the story of my professional life and growth.
+<br><br>
+It was built entirely by myself using a static site generator, to be hosted on GitLab pages.
+The project has helped me dive back into HTML and CSS, mostly, with some light JavaScript on the side.
+All-in-all, I had a lot of fun working on this website and it helped me dust off some of my (very rusty) front-end skills.
 {% endset %}
 
 {% set skills %}
+{{ macro.projectSkillIcon('Eleventy', 'https://www.11ty.dev/') }}
 {{ macro.projectSkillIcon('HTML', 'https://html.spec.whatwg.org/multipage/') }}
 {{ macro.projectSkillIcon('CSS', 'https://www.w3.org/Style/CSS/Overview.en.html') }}
 {{ macro.projectSkillIcon('JavaScript', 'https://www.javascript.com/') }}
+{{ macro.projectSkillIcon('Nunjucks', 'https://mozilla.github.io/nunjucks/') }}
 {{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
 {% endset %}
 
@@ -44,10 +47,16 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {###########}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+Anoctua was a web application which was to serve as a centralized management API for the company's SaaS ecosystem.
+Within this ecosystem, it would store relevant records and accounts for the company's SaaS product suite and have its communication secured by another part of the ecosystem,
+<a class="emphasis-purple" href="#project-Cerberus">Cerberus</a>.
+<br><br>
+The project forced me to consider each choice in the context of a larger whole, rather than just that of the application itself, both in terms of connections and storage.
+Furthermore, the application had to be built in such a way that it could both serve as an API for other first-party applications as well as allowing for the connection of a front-end framework to
+create a fully-functional web application.
+Essentially designing and creating an ecosystem from scratch was challenging, stimulating, and... fun.
+<br><br>
+Fun fact: Anoctua not-so-subtly refers to <em>A. noctua</em> (<em>Athene noctua</em>), more commonly known as the little owl, a symbol for Athena, the Greek goddess of wisdom.
 {% endset %}
 
 {% set skills %}
@@ -71,10 +80,16 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {############}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+Cerberus was an API responsible for the authentication and validation of communication occuring within the company's SaaS ecosystem.
+<br><br>
+Much like its mythological namesake, the API ensured the authenticity and security of any incoming and outgoing connections to the ecosystem's centralized management and storage application,
+<a class="emphasis-purple" href="#project-Anoctua">Anoctua</a>.
+Without going into too much detail, part of Cerberus' responsibilities was to ensure that requests to <a class="emphasis-purple" href="#project-Anoctua">Anoctua</a> from either individuals or
+applications had the required permissions, as well as being involved in user authentication.
+<br><br>
+This project had me performing further research into proper, secure communication between APIs, Symfony's security and user authentication, and how to handle the authentication of incoming requests on
+several levels (e.g., user permissions, application credentials).
+The development of Cerberus definitely brought difficulties with it, but much like good puzzles, they were challenging, thought-provoking, worthwhile, and fun to solve.
 {% endset %}
 
 {% set skills %}
@@ -193,7 +208,6 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {% set skills %}
 {{ macro.projectSkillIcon('Literature', '#') }}
 {{ macro.projectSkillIcon('Labwork', '#') }}
-{{ macro.projectSkillIcon('Chemistry', '#') }}
 {{ macro.projectSkillIcon('GitHub', '#') }}
 {{ macro.projectSkillIcon('RStudio', 'https://www.rstudio.com/', true) }}
 {% endset %}
@@ -239,10 +253,19 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {############}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+This was my first research project during my Master's degree and second project in palaeoecological research, this time centered around lake Hämelsee in Germany.
+<br><br>
+Whereas previous projects had me perform research and analysis on previously-acquired materials, this time around I was able to be involved from start to finish.
+I was part of a coring crew recovering sediment cores from the lake as part of the European INTIMATE ("<em>INT</em>egrating <em>I</em>ce core, <em>MA</em>rine, and <em>TE</em>rrestrial records")
+initiative.
+<br><br>
+After core retrieval, rather than identifying sub-fossil pollen, I was trained in the identification of sub-fossil chironomids (i.e., midge larvae).
+In the end, I processed and identified nearly 4,000 individual chironomids, which were used to infer past temperatures in and around the lake over a period of roughly 750 years.
+The results of this study showed a rapid warming event occurring at the onset of the Holocene, the time period in which we currently live.
+<br><br>
+This whole project was fascinating to be a part of, but most importantly, allowed me to work as part of a larger multi-disciplinary team.
+Not only did I make invaluable new connections, I also learned how to properly cooperate and communicate in a team, as well as improve the interpretation of my own and others' results through data
+comparisons, discussions, and peer review.
 {% endset %}
 
 {% set skills %}
@@ -268,10 +291,14 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {###############}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+My first real journey into academics and scientific research, my Bachelor's thesis revolved around the palaeoecological reconstruction of the area surrounding the lake Uddelermeer in the Netherlands.
+<br><br>
+During this project, I was trained to identify the sub-fossil remains of plant pollen from a sediment core taken from the lakebed.
+After having identified roughly 13,000 pollen under a microscope, we were then able to reconstruct the flora surrounding the lake over, roughly, the past 12,800 years and identify a lake lowstand.
+This taught us more about the climate in this area during that time, and in turn, helped further progress on understanding past climate change in Europe as a whole.
+<br><br>
+This research project piqued my interest in palaeoecological research, motivated me to continue my studies, and pursue a Master's degree.
+As the culmination of a three-year Bachelor's program, it represents both how far I had gotten in terms of my academic and analytical mindset and how much I had yet to learn.
 {% endset %}
 
 {% set skills %}
