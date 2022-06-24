@@ -56,6 +56,10 @@
     display: flex;
 }
 
+.project-links-icons {
+    justify-content: right;
+}
+
 .project-skill-link:hover, .project-link:hover {
     filter: brightness(0.75);
 }

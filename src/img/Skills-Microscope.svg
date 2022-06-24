@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="solid"
+   viewBox="0 0 480 480"
+   version="1.1"
+   sodipodi:docname="Skills-Microscope.svg"
+   width="480"
+   height="480"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.7050781"
+     inkscape:cx="196.17869"
+     inkscape:cy="239.87171"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="solid" />
+  <title
+     id="title2" />
+  <path
+     d="m 173.8926,228.61815 a 8,8 0 0 1 0,-11.314 l 22.627,-22.628 a 8,8 0 0 1 11.313,0 l 33.941,33.941 a 8,8 0 0 1 0,11.315 l -22.627,22.627 a 8,8 0 0 1 -11.314,0 z m 260.215,-181.018003 -28.284,28.282 16.97,16.971 a 8,8 0 0 1 0,11.314003 l -44.58,44.58 a 49.754,49.754 0 0 1 4,51.323 168.079,168.079 0 0 1 4.835,39.93 c 0,72.728 -46.6,134.768 -111.5,157.861 v 18.139 h 80 a 40.046,40.046 0 0 1 40,40 v 16 a 8,8 0 0 1 -8,8 H 51.548604 a 8,8 0 0 1 -8,-8 v -16 a 40.045,40.045 0 0 1 40,-40 H 163.5486 v -40 a 55.722,55.722 0 0 1 3.257,-18.8 L 61.892604,252.28415 a 8,8 0 0 1 0,-11.314 l 22.627,-22.627 a 8,8 0 0 1 11.313,0 l 104.914996,104.914 a 55.893,55.893 0 0 1 58.578,13.37 104.406,104.406 0 0 0 63.628,-111.652 49.233,49.233 0 0 1 -13.972,-7 l -21.5,21.5 a 8,8 0 0 1 -11.314,0 l -79.195,-79.2 a 8,8 0 0 1 0,-11.314 L 332.2836,13.656147 a 8,8 0 0 1 11.315,0 l 16.97,16.97 28.284,-28.2830005 a 8,8 0 0 1 11.314,0 l 33.941,33.9410005 a 8,8 0 0 1 0,11.315 z m -78.978,112.913003 a 24.311,24.311 0 1 0 0,34.385 24.309,24.309 0 0 0 0,-34.385 z m -111.581,215.487 a 24,24 0 1 0 -24,24 24.027,24.027 0 0 0 24,-24 z"
+     style="fill:#ffffff"
+     id="path4" />
+</svg>

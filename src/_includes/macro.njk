@@ -79,7 +79,7 @@
 {% endmacro %}
 
 {% macro projectSkillIcon(icon, link, wide = false) %}
-<div class="project-skill-icon-container">
+<div class="project-skill-icon-container" title="{{ icon }}">
     <a class="project-skill-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
         <img class="project-skill-icon {% if wide %}project-skill-icon-wide{% endif %}" src="/img/Skills-{{ icon }}.svg" alt="The logo for {{ icon }}.">
     </a>
