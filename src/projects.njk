@@ -113,10 +113,12 @@ The development of Cerberus definitely brought difficulties with it, but much li
 {################}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+CardBoard CX was a SaaS web application that allowed contact centers to easily create wallboard displays and show data from their contact centers platforms in real-time.
+On a market that often did not offer proper connections with these platforms and required development teams for the creation of wallboards, CardBoard CX successfully offered a specialized yet
+user-friendly alternative.
+<br><br>
+This project helped me learn more about asynchronous loading of data, connections to external systems, and providing user-friendly solutions to relatively complex problems.
+Designing and maintaining an efficient yet usable database structure was its own challenge, one that spawned many potential solutions and ideas from the team.
 {% endset %}
 
 {% set skills %}
@@ -142,10 +144,13 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {###############}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+Branches CX was a web application that, simply put, helped create complex decision trees for contact centers and provide analytics to help improve and streamline the contact process.
+The application was especially popular with hospitals, where it helped replace inefficient analog processes, such as large printed decision trees created using Microsoft Excel.
+<br><br>
+This was definitely another interesting project to work on and maintain.
+Most challenges revolved around efficient ways of calculating statistics, loading complex nested decision trees, calculating usage data, and providing functionality to enable and help users create
+proper decision trees.
+It also taught me a lot on the power and impact of major refactors and redesigns, as well as how to best handle these whilst minimizing inconveniences for customers.
 {% endset %}
 
 {% set skills %}
@@ -171,10 +176,14 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 {#############}
 
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis varius. Aliquet enim
-tortor at auctor urna nunc id. Turpis massa tincidunt dui ut ornare lectus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Pellentesque adipiscing commodo elit at imperdiet dui
-accumsan sit. Integer vitae justo eget magna fermentum iaculis eu non diam. Neque egestas congue quisque egestas diam. Dignissim sodales ut eu sem. Varius morbi enim nunc faucibus. Integer malesuada
-nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin. Mattis ullamcorper velit sed ullamcorper.
+The Sensetool project was my first time (re)building an entire web application from scratch.
+The application itself was designed to help anonymously register and report incoming contacts to SOA Aids Nederland, a Dutch government-funded organization that provides sexual education and advice to
+anyone in need of it.
+The original application back-end was built by a third party in ColdFusion, but due to a shift towards in-house development was to be rebuilt entirely in PHP.
+<br><br>
+I was once again lucky to work on a project with a steep learning curve, as it was my responsibility to estimate the required effort and build the back-end.
+This helped me learn a lot about the structure of a Symfony-based project, and how important proper cooperation between UX/UI, front-end and back-end developers is.
+Ultimately, we were able to rebuild the application, provide bug fixes and new features when necessary, and maintain excellent customer relations for years.
 {% endset %}
 
 {% set skills %}
@@ -194,13 +203,42 @@ nunc vel risus commodo viverra. Sem viverra aliquet eget sit. Aliquam ut porttit
 
 <div class="horizontal-separator"></div>
 
+{#########}
+{# Prose #}
+{#########}
+
+{% set description %}
+My first "real" development project, Prose, was a prototype contact center scripting application, being developed as a SaaS web application.
+It was meant to offer contact center managers an easy and accessible way to create and customize their agents' experience during their contact with clients.
+<br><br>
+I was assigned to this project alongside another trainee and a senior full-stack developer to guide and teach us.
+The project lasted roughly six months, during which I was first introduced to the use of frameworks, Git, and Agile programming.
+It was a very dense and steep learning curve that motivated me to keep learning and improve at my craft.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('Bitbucket', 'https://bitbucket.org/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.truelegends.nl/') }}
+{% endset %}
+
+{{ macro.project('Prose', 'True Legends & 3Fiftynine', 'Back-end Trainee', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
 {##################}
 {# Peruvian Andes #}
 {##################}
 
 {% set description %}
-Here it is, the third and final research project of my academic career in palaeoecology, a chemical and taxonomic analysis of leaves from the Peruvian Andes, performed in Los Angeles, United States of
-America.
+The third and final research project of my academic career in palaeoecology, a chemical and taxonomic analysis of leaves from the Peruvian Andes, performed in Los Angeles, United States of America.
 Technically, the subject of this project had little to do with palaeoecology, but the methods that were used did.
 <br><br>
 This study revolved around the analysis of leaf waxes from plants in the Peruvian rainforest and cloud forest to determine whether their composition depended on their environment or the type of plant.
