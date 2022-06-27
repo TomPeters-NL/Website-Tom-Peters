@@ -49,6 +49,20 @@ h2 {
     font-size: 30pt;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.emphasis-purple {
+    color: var(--emphasis-color-purple);
+}
+
 /******************/
 /* Navigation Bar */
 /******************/
