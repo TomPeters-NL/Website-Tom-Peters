@@ -1,5 +1,372 @@
 {% extends "base.njk" %}
 
+{% block title %}
+Tom Peters, MSc. | Projects
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ '/css/projects.css' | url }}">
+{% endblock stylesheet %}
+
 {% block content %}
-These are all my projects!
+<h1>Projects</h1>
+
+{#################}
+{# TomPeters.Dev #}
+{#################}
+
+{% set description %}
+A personal website project, which would serve as an exercise and an online home to the story of my professional life and growth.
+<br><br>
+It was built entirely by myself using a static site generator, to be hosted on GitLab pages.
+The project has helped me dive back into HTML and CSS, mostly, with some light JavaScript on the side.
+All-in-all, I had a lot of fun working on this website and it helped me dust off some of my (very rusty) front-end skills.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('Eleventy', 'https://www.11ty.dev/') }}
+{{ macro.projectSkillIcon('HTML', 'https://html.spec.whatwg.org/multipage/') }}
+{{ macro.projectSkillIcon('CSS', 'https://www.w3.org/Style/CSS/Overview.en.html') }}
+{{ macro.projectSkillIcon('JavaScript', 'https://www.javascript.com/') }}
+{{ macro.projectSkillIcon('Nunjucks', 'https://mozilla.github.io/nunjucks/') }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Code', 'https://gitlab.com/Extarion/personal-website', true) }}
+{{ macro.projectLinkIcon('Application', 'https://www.tompeters.dev/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.tompeters.dev/') }}
+{% endset %}
+
+{{ macro.project('TomPeters.Dev', 'Self', 'Full-stack Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{###########}
+{# Anoctua #}
+{###########}
+
+{% set description %}
+Anoctua was a web application which was to serve as a centralized management API for the company's SaaS ecosystem.
+Within this ecosystem, it would store relevant records and accounts for the company's SaaS product suite and have its communication secured by another part of the ecosystem,
+<a class="emphasis-purple" href="#project-Cerberus">Cerberus</a>.
+<br><br>
+The project forced me to consider each choice in the context of a larger whole, rather than just that of the application itself, both in terms of connections and storage.
+Furthermore, the application had to be built in such a way that it could both serve as an API for other first-party applications as well as allowing for the connection of a front-end framework to
+create a fully-functional web application.
+Essentially designing and creating an ecosystem from scratch was challenging, stimulating, and... fun.
+<br><br>
+Fun fact: Anoctua not-so-subtly refers to <em>A. noctua</em> (<em>Athene noctua</em>), more commonly known as the little owl, a symbol for Athena, the Greek goddess of wisdom.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('Anoctua', '3Fiftynine', 'Back-end Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{############}
+{# Cerberus #}
+{############}
+
+{% set description %}
+Cerberus was an API responsible for the authentication and validation of communication occuring within the company's SaaS ecosystem.
+<br><br>
+Much like its mythological namesake, the API ensured the authenticity and security of any incoming and outgoing connections to the ecosystem's centralized management and storage application,
+<a class="emphasis-purple" href="#project-Anoctua">Anoctua</a>.
+Without going into too much detail, part of Cerberus' responsibilities was to ensure that requests to <a class="emphasis-purple" href="#project-Anoctua">Anoctua</a> from either individuals or
+applications had the required permissions, as well as being involved in user authentication.
+<br><br>
+This project had me performing further research into proper, secure communication between APIs, Symfony's security and user authentication, and how to handle the authentication of incoming requests on
+several levels (e.g., user permissions, application credentials).
+The development of Cerberus definitely brought difficulties with it, but much like good puzzles, they were challenging, thought-provoking, worthwhile, and fun to solve.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('Cerberus', '3Fiftynine', 'Back-end Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{################}
+{# CardBoard CX #}
+{################}
+
+{% set description %}
+CardBoard CX was a SaaS web application that allowed contact centers to easily create wallboard displays and show data from their contact centers platforms in real-time.
+On a market that often did not offer proper connections with these platforms and required development teams for the creation of wallboards, CardBoard CX successfully offered a specialized yet
+user-friendly alternative.
+<br><br>
+This project helped me learn more about asynchronous loading of data, connections to external systems, and providing user-friendly solutions to relatively complex problems.
+Designing and maintaining an efficient yet usable database structure was its own challenge, one that spawned many potential solutions and ideas from the team.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('YouTube', 'https://youtu.be/kb9zWmBVpHY') }}
+{{ macro.projectLinkIcon('Application', 'https://app.cardboard.cx/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('CardBoard CX', '3Fiftynine', 'Back-end Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{###############}
+{# Branches CX #}
+{###############}
+
+{% set description %}
+Branches CX was a web application that, simply put, helped create complex decision trees for contact centers and provide analytics to help improve and streamline the contact process.
+The application was especially popular with hospitals, where it helped replace inefficient analog processes, such as large printed decision trees created using Microsoft Excel.
+<br><br>
+This was definitely another interesting project to work on and maintain.
+Most challenges revolved around efficient ways of calculating statistics, loading complex nested decision trees, calculating usage data, and providing functionality to enable and help users create
+proper decision trees.
+It also taught me a lot on the power and impact of major refactors and redesigns, as well as how to best handle these whilst minimizing inconveniences for customers.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('YouTube', 'https://youtu.be/qP3bQn7uXpk') }}
+{{ macro.projectLinkIcon('Application', 'https://app.branches.cx/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('Branches CX', '3Fiftynine', 'Back-end Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{#############}
+{# Sensetool #}
+{#############}
+
+{% set description %}
+The Sensetool project was my first time (re)building an entire web application from scratch.
+The application itself was designed to help anonymously register and report incoming contacts to SOA Aids Nederland, a Dutch government-funded organization that provides sexual education and advice to
+anyone in need of it.
+The original application back-end was built by a third party in ColdFusion, but due to a shift towards in-house development was to be rebuilt entirely in PHP.
+<br><br>
+I was once again lucky to work on a project with a steep learning curve, as it was my responsibility to estimate the required effort and build the back-end.
+This helped me learn a lot about the structure of a Symfony-based project, and how important proper cooperation between UX/UI, front-end and back-end developers is.
+Ultimately, we were able to rebuild the application, provide bug fixes and new features when necessary, and maintain excellent customer relations for years.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('GitLab', 'https://www.gitlab.com/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Company', 'https://www.soaaids.nl/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{% endset %}
+
+{{ macro.project('Sensetool', '3Fiftynine & SOA Aids Nederland', 'Back-end Developer', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{#########}
+{# Prose #}
+{#########}
+
+{% set description %}
+My first "real" development project, Prose, was a prototype contact center scripting application, being developed as a SaaS web application.
+It was meant to offer contact center managers an easy and accessible way to create and customize their agents' experience during their contact with clients.
+<br><br>
+I was assigned to this project alongside another trainee and a senior full-stack developer to guide and teach us.
+The project lasted roughly six months, during which I was first introduced to the use of frameworks, Git, and Agile programming.
+It was a very dense and steep learning curve that motivated me to keep learning and improve at my craft.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('PHP', 'https://www.php.net/') }}
+{{ macro.projectSkillIcon('Symfony', 'https://www.symfony.com/') }}
+{{ macro.projectSkillIcon('Twig', 'https://twig.symfony.com/') }}
+{{ macro.projectSkillIcon('MySQL', 'https://www.mysql.com/', true) }}
+{{ macro.projectSkillIcon('Bitbucket', 'https://bitbucket.org/') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('Company', 'https://www.3fiftynine.nl/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.truelegends.nl/') }}
+{% endset %}
+
+{{ macro.project('Prose', 'True Legends & 3Fiftynine', 'Back-end Trainee', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{##################}
+{# Peruvian Andes #}
+{##################}
+
+{% set description %}
+The third and final research project of my academic career in palaeoecology, a chemical and taxonomic analysis of leaves from the Peruvian Andes, performed in Los Angeles, United States of America.
+Technically, the subject of this project had little to do with palaeoecology, but the methods that were used did.
+<br><br>
+This study revolved around the analysis of leaf waxes from plants in the Peruvian rainforest and cloud forest to determine whether their composition depended on their environment or the type of plant.
+We showed that the wax composition of these plants corresponded strongly with the plant family, but still showed a similar change along the elevational gradient.
+In short, we were able to provide evidence for an evolutionary response by plants to their environment.
+<br><br>
+This project was important to me on several levels, both personally and professionally.
+Most of all, whereas previous projects often involved on European research sites and researchers, I was now halfway across the globe working with North-American researchers on South-American
+materials, and analyzing the data with the help of European colleagues.
+While the new experiences in terms of research methods were important, working as part of this network was invaluable by showing me the importance of a team working together, even when separated by
+thousands of kilometers.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('Literature', '#') }}
+{{ macro.projectSkillIcon('Labwork', '#') }}
+{{ macro.projectSkillIcon('GitHub', '#') }}
+{{ macro.projectSkillIcon('RStudio', 'https://www.rstudio.com/', true) }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('PDF', '/media/Master Thesis - Environment or Taxonomy.pdf' | url) }}
+{{ macro.projectLinkIcon('Science', 'https://www.sciencedirect.com/science/article/abs/pii/S0146638016300936') }}
+{{ macro.projectLinkIcon('Science', 'https://www.sciencedirect.com/science/article/abs/pii/S0016703716301193') }}
+{{ macro.projectLinkIcon('Company', 'https://www.uva.nl/') }}
+{{ macro.projectLinkIcon('Company', 'https://www.usc.edu/') }}
+{% endset %}
+
+{{ macro.project('Peruvian Andes', 'University of Southern California & University of Amsterdam', 'Researcher & Student', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{######################}
+{# Palaeoconservation #}
+{######################}
+
+{% set description %}
+This was my very first literature review. A research project of sorts, but relying on the construction of a narrative using existing literature, rather than performing my own research.
+<br><br>
+The purpose of this thesis was to prove and promote the use of palaeoecological data in the conservation and restoration of oceanic islands.
+Or, put more simply, why knowledge on an island's past is essential in protecting and restoring its flora and fauna.
+Ultimately, the thesis provided a well-argumented call to arms for researchers to put their research to practical use and was considered for publication, a consideration which I decided not to pursue
+further.
+<br><br>
+This project was important to my development in a number of ways.
+<br>
+First, I discovered that I enjoyed performing my own research more than solely gathering and recontextualizing existing research.
+However, I also learned how to craft a well-crafted narrative supporting an opinion, based on existing literature and properly examining all the sides to an argument.
+Finally, this was a project where I learned a lot about receiving, handling, and processing feedback on a personal and professional level (as evident from the existence of about 10 different versions
+of this thesis).
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('Literature', '#') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('PDF', '/media/Master Thesis - Conservation Palaeoecology.pdf' | url) }}
+{{ macro.projectLinkIcon('Company', 'https://www.uva.nl/') }}
+{% endset %}
+
+{{ macro.project('Conservation Palaeoecology', 'University of Amsterdam & Utrecht University', 'Author & Student', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{############}
+{# Hämelsee #}
+{############}
+
+{% set description %}
+This was my first research project during my Master's degree and second project in palaeoecological research, this time centered around lake Hämelsee in Germany.
+<br><br>
+Whereas previous projects had me perform research and analysis on previously-acquired materials, this time around I was able to be involved from start to finish.
+I was part of a coring crew recovering sediment cores from the lake as part of the European INTIMATE ("<em>INT</em>egrating <em>I</em>ce core, <em>MA</em>rine, and <em>TE</em>rrestrial records")
+initiative.
+<br><br>
+After core retrieval, rather than identifying sub-fossil pollen, I was trained in the identification of sub-fossil chironomids (i.e., midge larvae).
+In the end, I processed and identified nearly 4,000 individual chironomids, which were used to infer past temperatures in and around the lake over a period of roughly 750 years.
+The results of this study showed a rapid warming event occurring at the onset of the Holocene, the time period in which we currently live.
+<br><br>
+This whole project was fascinating to be a part of, but most importantly, allowed me to work as part of a larger multi-disciplinary team.
+Not only did I make invaluable new connections, I also learned how to properly cooperate and communicate in a team, as well as improve the interpretation of my own and others' results through data
+comparisons, discussions, and peer review.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('Microscope', '#') }}
+{{ macro.projectSkillIcon('Literature', '#') }}
+{{ macro.projectSkillIcon('Labwork', '#') }}
+{{ macro.projectSkillIcon('Drilling', '#') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('YouTube', 'https://youtu.be/GZ3NlESSk40' | url) }}
+{{ macro.projectLinkIcon('PDF', '/media/Master Thesis - Lake Hamelsee.pdf' | url) }}
+{{ macro.projectLinkIcon('Science', 'https://www.nature.com/articles/s43247-022-00457-y') }}
+{{ macro.projectLinkIcon('Company', 'https://www.uva.nl/') }}
+{% endset %}
+
+{{ macro.project('Lake Hämelsee', 'University of Amsterdam', 'Researcher, Coring Crew & Student', description, skills, links) }}
+
+<div class="horizontal-separator"></div>
+
+{###############}
+{# Uddelermeer #}
+{###############}
+
+{% set description %}
+My first real journey into academics and scientific research, my Bachelor's thesis revolved around the palaeoecological reconstruction of the area surrounding the lake Uddelermeer in the Netherlands.
+<br><br>
+During this project, I was trained to identify the sub-fossil remains of plant pollen from a sediment core taken from the lakebed.
+After having identified roughly 13,000 pollen under a microscope, we were then able to reconstruct the flora surrounding the lake over, roughly, the past 12,800 years and identify a lake lowstand.
+This taught us more about the climate in this area during that time, and in turn, helped further progress on understanding past climate change in Europe as a whole.
+<br><br>
+This research project piqued my interest in palaeoecological research, motivated me to continue my studies, and pursue a Master's degree.
+As the culmination of a three-year Bachelor's program, it represents both how far I had gotten in terms of my academic and analytical mindset and how much I had yet to learn.
+{% endset %}
+
+{% set skills %}
+{{ macro.projectSkillIcon('Microscope', '#') }}
+{{ macro.projectSkillIcon('Literature', '#') }}
+{% endset %}
+
+{% set links %}
+{{ macro.projectLinkIcon('PDF', '/media/Bachelor Thesis - Uddelermeer Lowstand.pdf' | url) }}
+{{ macro.projectLinkIcon('Science', 'https://journals.sagepub.com/doi/abs/10.1177/0959683616632890') }}
+{{ macro.projectLinkIcon('Company', 'https://www.uva.nl/') }}
+{% endset %}
+
+{{ macro.project('Lake Uddelermeer', 'University of Amsterdam', 'Researcher & Student', description, skills, links) }}
 {% endblock content %}}

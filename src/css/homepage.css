@@ -41,16 +41,6 @@
     padding-right: 1em;
 }
 
-.homepage-link {
-    color: inherit;
-    text-decoration: none;
-    transition: 0.25s;
-}
-
-.homepage-link:hover {
-    color: var(--secondary-color);
-}
-
 #homepage-socials {
     padding-top: 2.5vh;
 }
