@@ -50,10 +50,6 @@
     margin-top: 1em;
 }
 
-.company-description > span {
-    color: var(--emphasis-color-purple);
-}
-
 .timeline {
     height: 7.5vh;
 
