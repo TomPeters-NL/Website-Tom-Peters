@@ -1,3 +1,18 @@
+.about-me-quote {
+    margin-bottom: 2em;
+
+    text-align: center;
+}
+
+.about-me-quote-primary {
+    font-family: 'Montserrat-Medium-Italic';
+    font-size: 24pt;
+}
+
+.about-me-quote-secondary {
+    font-family: 'Montserrat-Ultra-Light-Italic';
+}
+
 .about-me-chapter {
     margin-bottom: 2em;
 

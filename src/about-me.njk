@@ -11,6 +11,15 @@ Tom Peters, MSc. | About Me
 {% block content %}
 <h1>About Me</h1>
 
+<div class="about-me-quote">
+    <div class="about-me-quote-primary">"Astra inclinant, sed non obligant."</div>
+    <div class="about-me-quote-secondary">"The stars incline us, they do not bind us."</div>
+</div>
+
+{##############}
+{# This Is Me #}
+{##############}
+
 {% set description %}
 Hello there!
 <br><br>
@@ -25,6 +34,10 @@ There's an entire universe out there, I would be remiss of me to not grow as a p
 
 {{ macro.aboutMeChapter('left', 'This Is Me', description, 'Casual.jpg') }}
 
+{##############}
+{# Growing Up #}
+{##############}
+
 {% set description %}
 I was born and raised in Zaandam, The Netherlands, a city right next to the Dutch capital of Amsterdam.
 My parents raised me to follow my heart, yet to temper and balance it out with rational thought.
@@ -38,6 +51,10 @@ I wanted nothing more to keep learning and understand the world around us better
 {% endset %}
 
 {{ macro.aboutMeChapter('right', 'Growing Up', description, 'Youth.jpg') }}
+
+{###################}
+{# Always Learning #}
+{###################}
 
 {% set description %}
 Over a period of five years, I would work hard to achieve both a Bachelor's and Master's degree in biology.
@@ -54,21 +71,47 @@ As most researchers tend to, it was time to find a PhD position to move further 
 
 {{ macro.aboutMeChapter('left', 'Always Learning', description, 'Coring.jpg') }}
 
+{###################}
+{# Diverging Paths #}
+{###################}
+
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus in metus vulputate. Lectus proin nibh nisl
-condimentum id. Volutpat maecenas volutpat blandit aliquam. Lobortis elementum nibh tellus molestie nunc non. Neque ornare aenean euismod elementum nisi quis eleifend. Risus quis varius quam quisque
-id diam. Ac tortor vitae purus faucibus ornare suspendisse sed. Facilisi morbi tempus iaculis urna. Massa ultricies mi quis hendrerit dolor magna eget. Etiam non quam lacus suspendisse faucibus
-interdum posuere. Sed pulvinar proin gravida hendrerit lectus a. Malesuada fames ac turpis egestas sed tempus.
+After receiving my Master's degree, I first started looking for a PhD position close to home.
+At the University of Amsterdam, I was one of two final candidates out of several dozens of applicants.
+Ultimately, however, the other candidate turned out to be more suitable for the position.
+Looking beyond Amsterdam, the nearest PhD positions in palaeoecology were in Belgium and the United Kingdom.
+<br><br>
+The thought of emigrating made me sit down and think about what I wanted in life at that time.
+I greatly enjoyed doing research and analysis, but the "nomadic" lifestyle and constant struggle for research grants discouraged me.
+In the end, I decided to leave the academic world.
+<br><br>
+At first, I looked for opportunities outside academics, but I was too specialized for most biology and ecology positions.
+Eventually, I realized I had to reconsider working in biology at all.
+So it was that I turned to old passions and interests, one of which was programming.
+I had always been interested in coding, but it seemed too complicated and I never pursued it.
+<br><br>
+A few Codecademy courses later, I had found out I thoroughly enjoyed the challenging puzzles and problems offered by programming.
+Not wanting to spend another few years on earning degrees, I would start looking for IT traineeships in 2016.
 {% endset %}
 
 {{ macro.aboutMeChapter('right', 'Diverging Paths', description, 'Monitors.jpg') }}
 
+{##############}
+{# A New Hope #}
+{##############}
+
 {% set description %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus in metus vulputate. Lectus proin nibh nisl
-condimentum id. Volutpat maecenas volutpat blandit aliquam. Lobortis elementum nibh tellus molestie nunc non. Neque ornare aenean euismod elementum nisi quis eleifend. Risus quis varius quam quisque
-id diam. Ac tortor vitae purus faucibus ornare suspendisse sed. Facilisi morbi tempus iaculis urna. Massa ultricies mi quis hendrerit dolor magna eget. Etiam non quam lacus suspendisse faucibus
-interdum posuere. Sed pulvinar proin gravida hendrerit lectus a. Malesuada fames ac turpis egestas sed tempus.
+I went through several job interviews for traineeships in a variety of fields.
+Some of them I rejected, rejected me, or did not believe the definitiveness of my career switch.
+Persistence paid off, however, and I found a position with a company that offered IT-related traineeships to those with science degrees.
+<br><br>
+This is really where it all started snowballing.
+I went through a coding bootcamp, chose to focus on back-end development, and was assigned to my first project, a Symfony-based SaaS web application.
+<br><br>
+It was the start of something new and fun, and I have been continually challenging myself ever since.
+I will always strive to grow, be it through improvement of existing skills or by learning new ones.
+It is a ever-repeating pattern in my life that continues to drive me, and always will.
 {% endset %}
 
-{{ macro.aboutMeChapter('left', 'Status Quo', description, 'Bench.jpg') }}
+{{ macro.aboutMeChapter('left', 'A New Hope', description, 'Bench.jpg') }}
 {% endblock content %}}
