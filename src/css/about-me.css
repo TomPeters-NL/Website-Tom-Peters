@@ -1,4 +1,7 @@
 .about-me-quote {
+    background-image: url('/img/Stars.svg');
+    background-size: contain;
+
     margin-bottom: 2em;
 
     text-align: center;
@@ -11,6 +14,7 @@
 
 .about-me-quote-secondary {
     font-family: 'Montserrat-Ultra-Light-Italic';
+    font-size: 12pt;
 }
 
 .about-me-chapter {
