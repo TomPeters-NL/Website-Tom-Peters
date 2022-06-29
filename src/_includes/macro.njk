@@ -1,3 +1,26 @@
+{############}
+{# About Me #}
+{############}
+
+{% macro aboutMeChapter(photoAlignment, title, description, photo, photoDescription = 'A photo of me.') %}
+{% set photo %}
+<div class="about-me-photo-container-{{ photoAlignment }}">
+    <img class="about-me-photo" src="/img/Photo-{{ photo }}" alt="{{ photoDescription }}">
+</div>
+{% endset %}
+
+<div class="about-me-chapter">
+    {{ photo | safe if photoAlignment == 'left' }}
+    <div class="about-me-description">
+        <div class="about-me-header">
+            <h2><span class="emphasis-purple">{{ title }}</span></h2>
+        </div>
+        <div class="about-me-text">{{ description | safe }}</div>
+    </div>
+    {{ photo | safe if photoAlignment == 'right' }}
+</div>
+{% endmacro %}
+
 {##############}
 {# Experience #}
 {##############}

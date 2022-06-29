@@ -1,5 +1,74 @@
 {% extends "base.njk" %}
 
+{% block title %}
+Tom Peters, MSc. | About Me
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ '/css/about-me.css' | url }}">
+{% endblock stylesheet %}
+
 {% block content %}
-This is me!
+<h1>About Me</h1>
+
+{% set description %}
+Hello there!
+<br><br>
+I'm Tom, a web developer with a background in biology.
+I made the switch from academics to IT in 2016, and it's hard to believe that it's been over half a decade by now.
+I greatly enjoy the puzzling and problem-solving aspects of programming, and I've been fortunate to work on many different challenges.
+<br><br>
+Luckily, I'm not a worker bee, but I have a rich personal life that brings me loads of joy as well.
+In my free time, I like to play video and board games, hang out with my cats, play my bass guitar, go dancing with friends, try out restaurants, and drink cocktails.
+There's an entire universe out there, I would be remiss of me to not grow as a person by always looking for the next thing to learn or experience.
+{% endset %}
+
+{{ macro.aboutMeChapter('left', 'This Is Me', description, 'Casual.jpg') }}
+
+{% set description %}
+I was born and raised in Zaandam, The Netherlands, a city right next to the Dutch capital of Amsterdam.
+My parents raised me to follow my heart, yet to temper and balance it out with rational thought.
+From a young age, I regularly came in contact with both nature and technology, feeding into my fascination with how things worked, be it plants, animals, or computers.
+<br><br>
+Growing up around pets, I initially wanted nothing more than to become a veterinarian and help animals.
+So it was that at school, I attended a curriculum mostly built around the natural sciences, with a hint of informatics.
+However, eventually the sciences won me over and my interest switched toward biology and academics, rather than veterinary medicine.
+<br><br>
+I wanted nothing more to keep learning and understand the world around us better, so I pursued a degree in biology at the University of Amsterdam.
+{% endset %}
+
+{{ macro.aboutMeChapter('right', 'Growing Up', description, 'Youth.jpg') }}
+
+{% set description %}
+Over a period of five years, I would work hard to achieve both a Bachelor's and Master's degree in biology.
+As the courses became increasingly specialized and detailed, I eventually chose to focus on ecology rather than microbiology.
+This is how I first learned of Palaeoecology in my third year, a field of science concerned with studying the Earth's past climate via (sub-)fossil remains of flora and fauna.
+<br><br>
+Palaeoecology is where I found my academic calling.
+During the final year of my Bachelor's and my entire Master's degree, I made sure to improve my academic mind- and skillset, and to experience as many relevant research techniques as possible.
+After working on research projects in The Netherlands, Germany, and United States, I eventually graduated with a Master's degree in Biological Sciences.
+<br><br>
+Experience and degree in hand, I was now ready to enter the academic world proper.
+As most researchers tend to, it was time to find a PhD position to move further up the scientific ladder.
+{% endset %}
+
+{{ macro.aboutMeChapter('left', 'Always Learning', description, 'Coring.jpg') }}
+
+{% set description %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus in metus vulputate. Lectus proin nibh nisl
+condimentum id. Volutpat maecenas volutpat blandit aliquam. Lobortis elementum nibh tellus molestie nunc non. Neque ornare aenean euismod elementum nisi quis eleifend. Risus quis varius quam quisque
+id diam. Ac tortor vitae purus faucibus ornare suspendisse sed. Facilisi morbi tempus iaculis urna. Massa ultricies mi quis hendrerit dolor magna eget. Etiam non quam lacus suspendisse faucibus
+interdum posuere. Sed pulvinar proin gravida hendrerit lectus a. Malesuada fames ac turpis egestas sed tempus.
+{% endset %}
+
+{{ macro.aboutMeChapter('right', 'Diverging Paths', description, 'Monitors.jpg') }}
+
+{% set description %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus in metus vulputate. Lectus proin nibh nisl
+condimentum id. Volutpat maecenas volutpat blandit aliquam. Lobortis elementum nibh tellus molestie nunc non. Neque ornare aenean euismod elementum nisi quis eleifend. Risus quis varius quam quisque
+id diam. Ac tortor vitae purus faucibus ornare suspendisse sed. Facilisi morbi tempus iaculis urna. Massa ultricies mi quis hendrerit dolor magna eget. Etiam non quam lacus suspendisse faucibus
+interdum posuere. Sed pulvinar proin gravida hendrerit lectus a. Malesuada fames ac turpis egestas sed tempus.
+{% endset %}
+
+{{ macro.aboutMeChapter('left', 'Status Quo', description, 'Bench.jpg') }}
 {% endblock content %}}
