@@ -1,0 +1,51 @@
+.about-me-quote {
+    background-image: url('/img/Stars.svg');
+    background-size: contain;
+
+    margin-bottom: 2em;
+
+    text-align: center;
+}
+
+.about-me-quote-primary {
+    font-family: 'Montserrat-Medium-Italic';
+    font-size: 24pt;
+}
+
+.about-me-quote-secondary {
+    font-family: 'Montserrat-Ultra-Light-Italic';
+    font-size: 12pt;
+}
+
+.about-me-chapter {
+    margin-bottom: 2em;
+
+    display: flex;
+}
+
+.about-me-photo-container-left, .about-me-photo-container-right {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-photo-container-left {
+    padding-right: 2em;
+}
+
+.about-me-photo-container-right {
+    margin-left: auto;
+    padding-left: 2em;
+}
+
+.about-me-photo {
+    height: 15em;
+}
+
+.about-me-text {
+    margin-top: 1em;
+
+    text-align: justify;
+}

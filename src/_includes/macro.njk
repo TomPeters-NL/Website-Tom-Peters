@@ -1,3 +1,26 @@
+{############}
+{# About Me #}
+{############}
+
+{% macro aboutMeChapter(photoAlignment, title, description, photo, photoDescription = 'A photo of me.') %}
+{% set photo %}
+<div class="about-me-photo-container-{{ photoAlignment }}">
+    <img class="about-me-photo" src="/img/photo/{{ photo }}" alt="{{ photoDescription }}">
+</div>
+{% endset %}
+
+<div class="about-me-chapter">
+    {{ photo | safe if photoAlignment == 'left' }}
+    <div class="about-me-description">
+        <div class="about-me-header">
+            <h2><span class="emphasis-purple">{{ title }}</span></h2>
+        </div>
+        <div class="about-me-text">{{ description | safe }}</div>
+    </div>
+    {{ photo | safe if photoAlignment == 'right' }}
+</div>
+{% endmacro %}
+
 {##############}
 {# Experience #}
 {##############}
@@ -7,9 +30,9 @@
     <div class="company-logo-container">
         <a class="company-logo-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
             {% if pngIcon %}
-            <img class="company-logo" src="/img/Logo-{{ icon }}.png" alt="The company logo for {{ name }}.">
+            <img class="company-logo" src="/img/logo/{{ icon }}.png" alt="The company logo for {{ name }}.">
             {% else %}
-            <img class="company-logo" src="/img/Logo-{{ icon }}.svg" alt="The company logo for {{ name }}.">
+            <img class="company-logo" src="/img/logo/{{ icon }}.svg" alt="The company logo for {{ name }}.">
             {% endif %}
         </a>
     </div>
@@ -36,7 +59,7 @@
 {% macro experienceProject(name, icon, link) %}
 <div class="company-project-logo-container">
     <a class="company-project-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
-        <img class="company-project-logo" src="/img/{{ icon }}" alt="The logo for {{ name }}">
+        <img class="company-project-logo" src="/img/logo/{{ icon }}" alt="The logo for {{ name }}">
     </a>
 </div>
 {% endmacro %}
@@ -81,7 +104,7 @@
 {% macro projectSkillIcon(icon, link, wide = false) %}
 <div class="project-skill-icon-container" title="{{ icon }}">
     <a class="project-skill-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
-        <img class="project-skill-icon {% if wide %}project-skill-icon-wide{% endif %}" src="/img/Skills-{{ icon }}.svg" alt="The logo for {{ icon }}.">
+        <img class="project-skill-icon {% if wide %}project-skill-icon-wide{% endif %}" src="/img/skill/{{ icon }}.svg" alt="The logo for {{ icon }}.">
     </a>
 </div>
 {% endmacro %}
@@ -89,7 +112,7 @@
 {% macro projectLinkIcon(icon, link, wide = false) %}
 <div class="project-link-icon-container">
     <a class="project-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
-        <img class="project-link-icon {% if wide %}project-link-icon-wide{% endif %}" src="/img/Links-{{ icon }}.svg" alt="The logo for {{ icon }}">
+        <img class="project-link-icon {% if wide %}project-link-icon-wide{% endif %}" src="/img/link/{{ icon }}.svg" alt="The logo for {{ icon }}">
     </a>
 </div>
 {% endmacro %}
