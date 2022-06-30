@@ -1,5 +1,29 @@
 {% extends "base.njk" %}
 
+{% block title %}
+Tom Peters, MSc. | Contact
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ '/css/contact.css' | url }}">
+{% endblock stylesheet %}
+
 {% block content %}
-Here's how to contact me!
+<h1>Contact</h1>
+
+<div class="contact-form-container">
+    <form class="contact-form" action="{{ '/php/sendEmail.php' | url }}" method="post">
+        <label class="contact-form-label" for="contact-form-name">Name</label>
+        <input class="contact-form-text" type="text" name="name" id="contact-form-name">
+
+        <label class="contact-form-label" for="contact-form-contact-information">E-mail or Phone Number</label>
+        <input class="contact-form-text" type="text" name="contact" id="contact-form-contact-information">
+
+        <label class="contact-form-label" for="contact-form-message">Message</label>
+        <textarea class="contact-form-textarea" name="message" id="contact-form-message"></textarea>
+
+        <button type="submit" id="contact-form-submit">Submit</button>
+    </form>
+</div>
+
 {% endblock content %}}

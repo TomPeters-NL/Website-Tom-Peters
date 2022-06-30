@@ -1,4 +1,6 @@
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addWatchTarget("./src/php");
+    eleventyConfig.addPassthroughCopy("./src/php");
     eleventyConfig.addWatchTarget("./src/css");
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addWatchTarget("./src/img");

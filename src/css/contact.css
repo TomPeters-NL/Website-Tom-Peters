@@ -1,0 +1,53 @@
+.contact-form-container {
+    margin-left: 2em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-label {
+    margin-bottom: 0.25em;
+
+    font-family: 'Montserrat-Regular';
+    color: var(--secondary-color);
+}
+
+.contact-form-text, .contact-form-textarea {
+    background: var(--secondary-color-transparent);
+
+    margin-bottom: 1em;
+    padding: 0.25em;
+
+    font-family: 'Lora';
+    font-size: 18pt;
+    color: var(--text-color);
+}
+
+.contact-form-text {
+    height: 1em;
+    width: 25em;
+}
+
+.contact-form-textarea {
+    height: 25em;
+    width: 50em;
+}
+
+#contact-form-submit {
+    width: 5em;
+    height: 2em;
+
+    background: var(--secondary-color-transparent);
+
+    font-family: 'Montserrat-Regular';
+    font-size: 18pt;
+    color: var(--secondary-color);
+}
+
+#contact-form-submit:hover {
+    filter: brightness(1.5);
+    transition: 0.25s;
+    cursor: pointer;
+}
