@@ -1,5 +1,9 @@
 image: node:16.15.1
 
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
 pages:
   script:
     - npm install
@@ -7,3 +11,5 @@ pages:
   artifacts:
     paths:
       - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
