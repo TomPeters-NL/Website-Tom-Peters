@@ -1,5 +1,5 @@
 .about-me-quote {
-    background-image: url('/img/Stars.svg');
+    background-image: url('/img/artwork/Bright-Stars.svg');
     background-size: contain;
 
     margin-bottom: 2em;
@@ -44,6 +44,8 @@
 
 .about-me-photo {
     height: 15em;
+
+    border-radius: 2.5%;
 }
 
 .about-me-text {

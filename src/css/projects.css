@@ -36,6 +36,7 @@
 
     font-family: 'Montserrat-Regular';
     font-size: 20pt;
+    color: var(--secondary-color);
 }
 
 .project-skills-title {
@@ -51,7 +52,7 @@
 
     padding: 0.25em;
 
-    border: solid 0.125em white;
+    border: solid 0.125em var(--secondary-color);
 
     display: flex;
 }
