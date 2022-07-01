@@ -63,6 +63,14 @@ a:hover {
     color: var(--emphasis-color-purple);
 }
 
+.emphasis-green {
+    color: var(--emphasis-color-green);
+}
+
+.emphasis-red {
+    color: var(--emphasis-color-red);
+}
+
 /******************/
 /* Navigation Bar */
 /******************/
