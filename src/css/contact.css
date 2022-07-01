@@ -1,0 +1,121 @@
+/****************/
+/* Contact Form */
+/****************/
+
+.contact-form-container {
+    margin-left: 2em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-label {
+    margin-bottom: 0.25em;
+
+    font-family: 'Montserrat-Regular';
+    color: var(--secondary-color);
+}
+
+.contact-form-text, .contact-form-textarea {
+    background: var(--secondary-color-transparent);
+
+    margin-bottom: 1em;
+    padding: 0.25em;
+
+    font-family: 'Lora';
+    font-size: 18pt;
+    color: var(--text-color);
+}
+
+.contact-form-text {
+    height: 1em;
+    width: 25em;
+}
+
+.contact-form-textarea {
+    height: 25em;
+    width: 50em;
+}
+
+#contact-form-submit {
+    width: 5em;
+    height: 2em;
+
+    background: var(--secondary-color-transparent);
+
+    font-family: 'Montserrat-Regular';
+    font-size: 18pt;
+    color: var(--secondary-color);
+}
+
+#contact-form-submit:hover {
+    filter: brightness(1.5);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*******************/
+/* Success Message */
+/*******************/
+
+#contact-success {
+    display: none;
+
+    margin-top: 10em;
+
+    text-align: center;
+}
+
+#contact-success-text {
+    margin-top: 1em;
+}
+
+#contact-success-signature {
+    height: 5em;
+
+    margin-top: 2em;
+
+    filter: invert(1);
+    opacity: 0.9;
+}
+
+/*****************/
+/* Error Message */
+/*****************/
+
+#contact-error {
+    width: 100vw;
+    height: 10vh;
+
+    position: fixed;
+    bottom: -10vh;
+    left: 0;
+
+    border-top: 0.05em solid black;
+
+    background-color: var(--emphasis-color-red);
+    color: var(--main-color);
+}
+
+#contact-error-close {
+    width: fit-content;
+    height: fit-content;
+
+    position: relative;
+    float: right;
+
+    margin-right: 1vh;
+
+    font-family: 'Montserrat-Medium';
+}
+
+#contact-error-text {
+    height: 5vh;
+    line-height: 5vh;
+
+    margin-top: calc((0.5 * 10vh) - (0.5 * 5vh));
+
+    text-align: center;
+}
