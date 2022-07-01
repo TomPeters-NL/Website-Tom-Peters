@@ -59,6 +59,7 @@ $email->msgHTML($htmlMessage);
 // $email->Body = $plainTextMessage;
 
 $result = $email->send();
+$result = true;
 if ($result === false) {
     echo 'E-mail Error: ' . $email->ErrorInfo;
 } else {

@@ -8,11 +8,15 @@ Tom Peters, MSc. | Contact
 <link rel="stylesheet" href="{{ '/css/contact.css' | url }}">
 {% endblock stylesheet %}
 
+{% block javascript %}
+<script type="text/javascript" src="{{ '/js/contact.js' | url }}"></script>
+{% endblock javascript %}
+
 {% block content %}
 <h1>Contact</h1>
 
 <div class="contact-form-container">
-    <form class="contact-form" action="{{ '/php/sendEmail.php' | url }}" method="post">
+    <form id="contact-form" action="{{ '/php/sendEmail.php' | url }}" method="post">
         <label class="contact-form-label" for="contact-form-name">Name</label>
         <input class="contact-form-text" type="text" name="name" id="contact-form-name" required>
 
@@ -26,4 +30,22 @@ Tom Peters, MSc. | Contact
     </form>
 </div>
 
+<div id="contact-success">
+    <h2 class="emphasis-green">Success!</h2>
+    <div id="contact-success-text">
+        Your message has been sent on its way.
+        <br><br>
+        Thank you for reaching out, I'll contact you soon.
+    </div>
+    <img id="contact-success-signature" src="/img/Signature.png" alt="My signature."></a>
+</div>
+
+<div id="contact-error">
+    <div id="contact-error-close">
+        x
+    </div>
+    <div id="contact-error-text">
+        Something went wrong while sending your message. Please try again later.
+    </div>
+</div>
 {% endblock content %}}
