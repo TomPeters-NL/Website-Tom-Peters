@@ -14,13 +14,13 @@ Tom Peters, MSc. | Contact
 <div class="contact-form-container">
     <form class="contact-form" action="{{ '/php/sendEmail.php' | url }}" method="post">
         <label class="contact-form-label" for="contact-form-name">Name</label>
-        <input class="contact-form-text" type="text" name="name" id="contact-form-name">
+        <input class="contact-form-text" type="text" name="name" id="contact-form-name" required>
 
         <label class="contact-form-label" for="contact-form-contact-information">E-mail or Phone Number</label>
-        <input class="contact-form-text" type="text" name="contact" id="contact-form-contact-information">
+        <input class="contact-form-text" type="text" name="contact" id="contact-form-contact-information" required>
 
         <label class="contact-form-label" for="contact-form-message">Message</label>
-        <textarea class="contact-form-textarea" name="message" id="contact-form-message"></textarea>
+        <textarea class="contact-form-textarea" name="message" id="contact-form-message" required></textarea>
 
         <button type="submit" id="contact-form-submit">Submit</button>
     </form>
