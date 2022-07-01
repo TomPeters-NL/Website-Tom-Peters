@@ -61,3 +61,38 @@ body {
 #homepage-linkedin:hover {
     filter: brightness(0) saturate(100%) invert(57%) sepia(11%) saturate(663%) hue-rotate(194deg) brightness(96%) contrast(90%);
 }
+
+/*****************/
+/* Small Screens */
+/*****************/
+
+@media only screen and (max-width: 1280px) {
+    #homepage-title {
+        font-size: calc(75pt / 2);
+    }
+
+    #homepage-subtitle {
+        font-size: calc(25pt / 2);
+    }
+
+    #homepage-logo {
+        width: calc(50vh / 2);
+        height: calc(50vh / 2);
+    }
+
+    #homepage-navbar {
+        font-size: calc(25pt / 2);
+
+        flex-direction: column;
+    }
+
+    .homepage-navbar-item {
+        padding-top: calc(1em / 2);
+        padding-bottom: calc(1em / 2);
+    }
+
+    #homepage-linkedin {
+        width: calc(2em / 2);
+        height: calc(2em / 2);
+    }
+}

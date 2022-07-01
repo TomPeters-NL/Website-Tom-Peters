@@ -91,3 +91,41 @@
 
     border-top: solid 0.25em var(--secondary-color-transparent);
 }
+
+/*****************/
+/* Small Screens */
+/*****************/
+
+@media only screen and (max-width: 1280px) {
+    .project-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-company {
+        margin-left: 0;
+    }
+
+    .project-subheader {
+        margin-top: 1em;
+
+        text-align: center;
+    }
+
+    .project-footer {
+        height: fit-content;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-links {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .project-skills-title, .project-links-title {
+        text-align: center;
+        font-size: calc(20pt / 2);
+    }
+}

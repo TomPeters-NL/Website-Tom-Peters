@@ -14,15 +14,18 @@
 
     <link rel="stylesheet" href="{{ '/css/font.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/navbar.css' | url }}">
     {% block stylesheet %}{% endblock stylesheet %}
 
     <script type="text/javascript" src="{{ '/js/jquery-3.6.0.min.js' | url }}"></script>
+    <script type="text/javascript" src="{{ '/js/navbar.js' | url }}"></script>
     {% block javascript %}{% endblock javascript %}
 </head>
 
 <body>
     {% block navbar %}
     {% include "navigation-bar.njk" %}
+    {% include "mobile-navigation-bar.njk" %}
     {% endblock navbar %}
 
     <div id="content-container">

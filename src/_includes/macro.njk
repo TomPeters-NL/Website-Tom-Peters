@@ -9,15 +9,14 @@
 </div>
 {% endset %}
 
-<div class="about-me-chapter">
-    {{ photo | safe if photoAlignment == 'left' }}
+<div class="about-me-chapter chapter-photo-{{ photoAlignment }}">
+    {{ photo | safe }}
     <div class="about-me-description">
         <div class="about-me-header">
             <h2><span class="emphasis-purple">{{ title }}</span></h2>
         </div>
         <div class="about-me-text">{{ description | safe }}</div>
     </div>
-    {{ photo | safe if photoAlignment == 'right' }}
 </div>
 {% endmacro %}
 
