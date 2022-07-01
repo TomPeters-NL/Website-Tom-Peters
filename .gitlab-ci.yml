@@ -1,0 +1,9 @@
+image: node:16.15.1
+
+pages:
+  script:
+    - npm install
+    - npx @11ty/eleventy
+  artifacts:
+    paths:
+      - public
