@@ -24,4 +24,15 @@ $(document).ready(function () {
     $('#contact-error-close').on('click', function () {
         $('#contact-error').animate({bottom: '-10vh'}, 500);
     });
+
+    $('#contact-block-header').on('click', function () {
+        const activeClass = 'anicon-active';
+        const isActive = $(this).hasClass(activeClass);
+
+        if (isActive === true) {
+            $(this).removeClass(activeClass);
+        } else {
+            $(this).addClass(activeClass);
+        }
+    });
 });

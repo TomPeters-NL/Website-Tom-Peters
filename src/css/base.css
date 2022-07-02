@@ -6,6 +6,7 @@
     --main-color: #282B34;
     --secondary-color: #888DAA;
     --secondary-color-transparent: rgba(136, 141, 170, 0.1);
+    --overlay-color: rgba(40, 43, 52, 0.75);
     --header-color: #FFFFFF;
     --hover-color: #888DAA;
     --text-color: #FFFFFF;

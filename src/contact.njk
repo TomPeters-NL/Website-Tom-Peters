@@ -15,8 +15,26 @@ Tom Peters, MSc. | Contact
 {% block content %}
 <h1>Contact</h1>
 
+<div id="contact-block-overlay">
+    <div id="contact-block-window">
+        <div class="anicon emphasis-red" id="contact-block-header">Q</div>
+        <div id="contact-block-text">
+            This website is currently hosted with GitLab Pages, which means I do not have access to server-side PHP functionality.
+            <br><br>
+            Or in other words, the really nifty contact form visible in the background does not work.
+            <br><br>
+            So I would kindly like to request you contact me via LinkedIn and I'll respond as soon as I am able.
+        </div>
+        <div id="contact-block-link-container">
+            <a class="contact-block-link" href="https://www.linkedin.com/in/1992-tom-peters/" target="_blank" rel="noopener noreferrer">
+                <img id="contact-block-linkedin" src="/img/logo/LinkedIn.svg" alt="The LinkedIn logo.">
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="contact-form-container">
-    <form id="contact-form" action="{{ '/php/sendEmail.php' | url }}" method="post">
+    <form id="contact-form" action="#" method="post">
         <label class="contact-form-label" for="contact-form-name">Name</label>
         <input class="contact-form-text" type="text" name="name" id="contact-form-name" required>
 
