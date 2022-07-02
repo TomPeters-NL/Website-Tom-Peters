@@ -138,12 +138,12 @@
 
 #contact-block-window {
     width: 20em;
-    height: 25em;
+    height: 27.5em;
 
     padding: 1em;
     border: solid 0.25em white;
     border-radius: 2%;
-    margin-top: calc(25vh - var(--header-height));
+    margin-top: calc(20vh - var(--header-height));
     margin-left: auto;
     margin-right: auto;
 
