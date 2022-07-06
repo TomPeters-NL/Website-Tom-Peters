@@ -53,7 +53,7 @@ $email->Username = 'apikey';
 $email->Password = 'SENDGRID_API_KEY';
 
 $email->setFrom('contact@tompeters.dev', 'Personal Contact Bot');
-$email->addAddress('tompeters.home@gmail.com', 'Tom Peters');
+$email->addAddress('', 'Tom Peters');
 $email->Subject = 'TomPeters.Dev - Contact Request';
 $email->msgHTML($htmlMessage);
 // $email->Body = $plainTextMessage;
