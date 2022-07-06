@@ -192,6 +192,16 @@
 /* Small Screens */
 /*****************/
 
+@media only screen and (max-width: 1680px) {
+    .contact-form-text, .contact-form-textarea {
+        font-size: calc(18pt / 1.5);
+    }
+
+    #contact-form-submit {
+        font-size: calc(18pt / 1.5);
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .contact-form-container {
         margin-left: 0;

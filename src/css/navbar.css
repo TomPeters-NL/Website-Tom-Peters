@@ -9,8 +9,8 @@ header {
 
     height: var(--header-height);
 
-    padding-left: 12.5vw;
-    padding-right: 12.5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
     border-bottom: 0.05em solid white;
 
     display: flex;
@@ -120,6 +120,12 @@ header {
 /*****************/
 /* Small Screens */
 /*****************/
+
+@media only screen and (max-width: 1680px) {
+    header {
+        font-size: calc(20pt / 1.5);
+    }
+}
 
 @media only screen and (max-width: 1280px) {
     header {

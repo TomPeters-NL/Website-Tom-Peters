@@ -69,6 +69,35 @@ body {
 /* Small Screens */
 /*****************/
 
+@media only screen and (max-width: 1680px) {
+    #homepage-title {
+        font-size: calc(75pt / 1.5);
+    }
+
+    #homepage-subtitle {
+        font-size: calc(25pt / 1.5);
+    }
+
+    #homepage-logo {
+        width: calc(50vh / 1.5);
+        height: calc(50vh / 1.5);
+    }
+
+    #homepage-navbar {
+        font-size: calc(25pt / 1.5);
+    }
+
+    .homepage-navbar-item {
+        padding-top: calc(1em / 1.5);
+        padding-bottom: calc(1em / 1.5);
+    }
+
+    #homepage-linkedin {
+        width: calc(2em / 1.5);
+        height: calc(2em / 1.5);
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     #homepage-title {
         font-size: calc(75pt / 2);

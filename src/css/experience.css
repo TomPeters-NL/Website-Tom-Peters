@@ -66,6 +66,12 @@
 /* Small Screens */
 /*****************/
 
+@media only screen and (max-width: 1680px) {
+    .company-period {
+        font-size: calc(20pt / 1.5);
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .company-experience {
         flex-direction: column;
