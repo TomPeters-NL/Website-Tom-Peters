@@ -3,7 +3,8 @@
 /**********************/
 
 header {
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 20pt;
 
     height: var(--header-height);
@@ -96,7 +97,8 @@ header {
     height: 100%;
 
     text-align: center;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 20pt;
 }
 

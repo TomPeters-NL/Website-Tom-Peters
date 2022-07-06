@@ -15,6 +15,10 @@
     --emphasis-color-red: #FF7D7D;
 
     --header-height: 7.5vh;
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 * {
@@ -29,7 +33,7 @@ body {
     background-color: var(--main-color);
     color: var(--text-color);
 
-    font-family: 'Lora';
+    font-family: 'Inter';
     font-size: 18pt;
 }
 
@@ -39,14 +43,15 @@ footer {
 }
 
 h1 {
-    font-family: 'Montserrat-Heavy';
+    font-family: 'Montserrat';
     font-size: 40pt;
 
     margin-bottom: 1em;
 }
 
 h2 {
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat';
+    font-weight: 500;
     font-size: 30pt;
 }
 
@@ -73,7 +78,7 @@ a:hover {
 }
 
 .anicon, .anicon-active {
-    font-family: 'Anicons';
+    font-family: 'Anicons Regular';
 }
 
 .anicon {

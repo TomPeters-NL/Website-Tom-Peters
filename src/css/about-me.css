@@ -10,12 +10,16 @@
 }
 
 .about-me-quote-primary {
-    font-family: 'Montserrat-Medium-Italic';
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
     font-size: 24pt;
 }
 
 .about-me-quote-secondary {
-    font-family: 'Montserrat-Ultra-Light-Italic';
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
     font-size: 12pt;
 }
 

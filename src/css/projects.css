@@ -34,7 +34,8 @@
 .project-skills-title, .project-links-title {
     height: fit-content;
 
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 20pt;
     color: var(--secondary-color);
 }

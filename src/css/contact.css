@@ -14,7 +14,8 @@
 .contact-form-label {
     margin-bottom: 0.25em;
 
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
+    font-weight: 400;
     color: var(--secondary-color);
 }
 
@@ -24,7 +25,7 @@
     margin-bottom: 1em;
     padding: 0.25em;
 
-    font-family: 'Lora';
+    font-family: 'Inter';
     font-size: 18pt;
     color: var(--text-color);
 }
@@ -45,7 +46,8 @@
 
     background: var(--secondary-color-transparent);
 
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 18pt;
     color: var(--secondary-color);
 }
@@ -108,7 +110,8 @@
 
     margin-right: 1vh;
 
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat';
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -166,7 +169,7 @@
 
 #contact-block-text {
     text-align: justify;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Inter';
 }
 
 #contact-block-link-container {

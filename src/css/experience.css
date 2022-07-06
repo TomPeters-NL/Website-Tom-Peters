@@ -23,7 +23,9 @@
 }
 
 .company-period {
-    font-family: 'Montserrat-Ultra-Light-Italic';
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
     font-size: 20pt;
 
     margin-left: 1em;
