@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.smaller-header {
+    font-size: 0.95em;
+}
+
 .project-company {
     color: var(--secondary-color);
 
