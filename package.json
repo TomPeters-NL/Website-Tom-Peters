@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The personal website for Tom Peters, MSc.",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "Tom Peters",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^2.0"
   }
 }
