@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.0"
   }
 }
