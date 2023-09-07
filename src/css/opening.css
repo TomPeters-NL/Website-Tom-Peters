@@ -1,0 +1,56 @@
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-359deg);}
+}
+
+#opening-spacer {
+    height: 25vh;
+}
+
+#opening {
+    position: sticky;
+    bottom: 0;
+
+    background-image: url('/img/artwork/Bright-Stars.svg');
+    background-size: 25%;
+    background-position: center;
+
+    height: 90vh;
+    width: 100%;
+}
+
+#opening-content {
+    text-align: center;
+}
+
+#opening-header, #opening-logo-container {
+    width: fit-content;
+    margin: auto;
+    padding-top: 7.5vh;
+}
+
+#opening-title {
+    font: var(--font-header-attention);
+}
+
+#opening-subtitle {
+    font: var(--font-header);
+}
+
+#opening-logo {
+    width: 50vh;
+    height: 50vh;
+}
+
+#opening-logo-motto {
+    transform-origin: 50% 50%;
+    animation: rotate 150s infinite linear;
+}
+
+#opening-navbar {
+    width: 100%;
+    padding-top: 7.5vh;
+    display: flex;
+    justify-content: space-between;
+    font: var(--font-header);
+}
