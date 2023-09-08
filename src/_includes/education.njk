@@ -3,5 +3,133 @@
         <div class="section-header">
             Education
         </div>
+        <div id="education-terminal">
+            {% set prompt = 'mysql>' %}
+            {% set space = '&nbsp;' %}
+
+            <div id="education-introduction">
+                <div class="education-command">
+                    {{ prompt }} SHOW DATABASES;
+                </div>
+                <div class="education-response">
+                    +--------------------+<br>
+                    {{ 'Database' | mysqlRow(22) | safe }}<br>
+                    +--------------------+<br>
+                    {{ 'information_schema' | mysqlRow(22) | safe }}<br>
+                    {{ 'pied_piper' | mysqlRow(22) | safe }}<br>
+                    {{ 'scp_containment' | mysqlRow(22) | safe }}<br>
+                    {{ 'super_secret' | mysqlRow(22) | safe }}<br>
+                    {{ 'sys' | mysqlRow(22) | safe }}<br>
+                    {{ 'tom' | mysqlRow(22) | safe }}<br>
+                    +--------------------+<br>
+                    6 rows in set (3.14 sec)
+                </div>
+                <div class="education-command">
+                    {{ prompt }} USE tom;
+                </div>
+                <div class="education-response">
+                    Database changed
+                </div>
+                <div class="education-command">
+                    {{ prompt }} SHOW TABLES;
+                </div>
+                <div class="education-response">
+                    +---------------+<br>
+                    {{ 'Tables_in_tom' | mysqlRow(17) | safe }}<br>
+                    +---------------+<br>
+                    {{ 'about_me' | mysqlRow(17) | safe }}<br>
+                    {{ 'company' | mysqlRow(17) | safe }}<br>
+                    {{ 'contact' | mysqlRow(17) | safe }}<br>
+                    {{ 'education' | mysqlRow(17) | safe }}<br>
+                    {{ 'experience' | mysqlRow(17) | safe }}<br>
+                    {{ 'pets' | mysqlRow(17) | safe }}<br>
+                    {{ 'position' | mysqlRow(17) | safe }}<br>
+                    {{ 'project' | mysqlRow(17) | safe }}<br>
+                    {{ 'school' | mysqlRow(17) | safe }}<br>
+                    {{ 'skill' | mysqlRow(17) | safe }}<br>
+                    +---------------+<br>
+                    9 rows in set (13.37 sec)
+                </div>
+                <div class="education-command">
+                    {{ prompt }} SELECT e.start, e.end, e.title, s.subject, e.description, e.projects<br>
+                    {{ '&nbsp' | repeat(7) | safe }}FROM education e<br>
+                    {{ '&nbsp' | repeat(7) | safe }}JOIN school s ON s.id = e.school_id<br>
+                    {{ '&nbsp' | repeat(7) | safe }}ORDER BY e.end DESC \G
+                </div>
+                <div class="education-response">
+                    {% set educationCount = collections.education | length %}
+                    {% for study in collections.education | reverse %}
+                    {% set study = study.data %}
+                    <div class="education-study">
+                        <div class="study-row-start">
+                            {{ '*' | repeat(27) + ' ' + loop.index + '. row ' + '*' | repeat(27)}}
+                        </div>
+                        <div class="study-row">
+                            <div class="study-property">
+                                start:
+                            </div>
+                            <div class="study-value">
+                                {{ study.start }}
+                            </div>
+                        </div>
+                        <div class="study-row">
+                            <div class="study-property">
+                                end:
+                            </div>
+                            <div class="study-value">
+                                {{ study.end }}
+                            </div>
+                        </div>
+                        <div class="study-row">
+                            <div class="study-property">
+                                title:
+                            </div>
+                            <div class="study-value">
+                                <span class="highlight-purple">
+                                    {{ study.title }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="study-row">
+                            <div class="study-property">
+                                subject:
+                            </div>
+                            <div class="study-value">
+                                <span class="highlight-green">
+                                    {{ study.subject }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="study-row">
+                            <div class="study-property">
+                                description:
+                            </div>
+                            <div class="study-value">
+                                {{ study.description }}
+                            </div>
+                        </div>
+                        <div class="study-row">
+                            <div class="study-property">
+                                projects:
+                            </div>
+                            <div class="study-value">
+                                <div class="study-projects">
+                                    {% set projectCount = study.projects | length %}
+                                    {% for project in study.projects %}
+                                    <div class="study-project {% if loop.index < projectCount %}padding{% endif %}">
+                                        > {{ project }}
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="education-study-summary">
+                        {{ educationCount }} rows in set (0.13 sec)
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
