@@ -1,8 +1,3 @@
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(-359deg);}
-}
-
 #opening-spacer {
     height: 25vh;
 }
@@ -40,11 +35,6 @@
 #opening-logo {
     width: 50vh;
     height: 50vh;
-}
-
-#opening-logo-motto {
-    transform-origin: 50% 50%;
-    animation: rotate 150s infinite linear;
 }
 
 #opening-navbar {

@@ -7,7 +7,7 @@ jQuery(function ($) {
         scrollPosition = $(this).scrollTop();
 
         backgroundSize = initialBackgroundSize + (0.05 * scrollPosition);
-        if (backgroundSize <= 75) {
+        if (backgroundSize <= 50) {
             $('#opening').css('background-size', backgroundSize + '%');
         }
     });
