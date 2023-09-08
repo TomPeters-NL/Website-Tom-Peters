@@ -1,0 +1,36 @@
+<section id="experience">
+    <div id="experience-content" class="content-container">
+        <div class="section-header">
+            Experience
+        </div>
+            {% set experienceCount = collections.experiences | length %}
+            {% for experience in collections.experiences %}
+                <div class="experience-chapter">
+                    [
+                    <div class="experience-period">
+                        'start' => '{{ experience.data.start }}',
+                        <br>
+                        'end' &nbsp;&nbsp;=> {{ experience.data.end }},
+                    </div>
+                    <div class="experience-position">
+                        'company' &nbsp;=> '{{ experience.data.company }}',
+                        <br>
+                        'position' => '<span class="highlight-purple">{{ experience.data.position }}</span>',
+                    </div>
+                    <div class="experience-description">
+                        <div class="experience-description-index">
+                            'description' =>&nbsp;
+                        </div>
+                        <div class="experience-description-value">
+                            '{{ experience.data.description }}',
+                        </div>
+                    </div>
+                    <br>
+                    ]
+                </div>
+                {% if loop.index < experienceCount %}
+                    <div class="experience-spacer"></div>
+                {% endif %}
+            {% endfor %}
+    </div>
+</section>

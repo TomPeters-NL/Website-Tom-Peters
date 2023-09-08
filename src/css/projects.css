@@ -1,0 +1,36 @@
+#projects-terminal {
+    background-color: var(--color-primary);
+    border-left: 0.5vw solid var(--color-tertiary);
+    font: var(--font-code);
+
+    padding: 1vh;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    padding: calc(30px - 0.5vh) 40px;
+}
+
+.project-detail {
+    display: inline-flex;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.project-property {
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.project-value {
+    flex: 6;
+}
+
+.project-links {
+    display: none;
+}
+
+.project-link {
+    text-decoration: underline;
+}

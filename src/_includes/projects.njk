@@ -1,0 +1,70 @@
+<section id="projects" class="dark">
+    <div id="projects-content" class="content-container">
+        <div class="section-header">
+            Projects
+        </div>
+        <div id="projects-terminal">
+            {% set directory = '<span class="highlight-purple">tom@PERSONAL-WEBSITE</span>:/$' | safe %}
+            {{ directory }} projects=getProjects
+
+            {% for project in collections.projects %}
+            {% set project = project.data %}
+            <div class="project">
+                {{ directory }} display projects[{{ loop.index0 }}]
+
+                <div class="project-details">
+                    <div class="project-detail">
+                        <span class="project-property">name:</span>
+                        <span class="project-value highlight-red">{{ project.name }}</span>
+                    </div>
+
+                    <div class="project-detail">
+                        <span class="project-property">organization:</span>
+                        <span class="project-value">{{ project.host }}</span>
+                    </div>
+
+                    <div class="project-detail">
+                        <span class="project-property">role:</span>
+                        <span class="project-value highlight-green">{{ project.role }}</span>
+                    </div>
+
+                    <div class="project-detail">
+                        <span class="project-property">description:</span>
+                        <span class="project-value">{{ project.description }}</span>
+                    </div>
+
+                    <div class="project-detail">
+                        <span class="project-property">skillset:</span>
+                        <span class="project-value">
+                            <button type="button" class="collapsible" id="skillset-button-{{ loop.index0 }}">
+                                <img class="collapsible-icon" src="/img/triangle.svg" alt="A clickable button to show or hide the skillset list.">
+                            </button>
+                            <br>
+                            <div class="project-links" id="skillset-list-{{ loop.index0 }}">
+                                {% for skill, weblink in project.skillset %}
+                                - <a class="project-link" href="{{ weblink }}">{{ skill }}</a><br>
+                                {% endfor %}
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="project-detail">
+                        <span class="project-property">links/media:</span>
+                        <span class="project-value">
+                            <button type="button" class="collapsible" id="media-button-{{ loop.index0 }}">
+                                <img class="collapsible-icon" src="/img/triangle.svg" alt="A clickable button to show or hide the media list.">
+                            </button>
+                            <br>
+                            <div class="project-links" id="media-list-{{ loop.index0 }}">
+                                {% for media, weblink in project.links %}
+                                - <a class="project-link" href="{{ weblink }}">{{ media }}</a><br>
+                                {% endfor %}
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

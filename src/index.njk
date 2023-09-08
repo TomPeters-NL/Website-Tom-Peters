@@ -1,0 +1,24 @@
+{% extends "base.njk" %}
+
+{% block title %}
+Tom Peters, MSc.
+{% endblock title %}
+
+{% block header %}
+{% include "header.njk" %}
+{% endblock header %}
+
+{% block content %}
+<div id="container">
+    {% include "opening.njk" %}
+    {% include "about-me.njk" %}
+    {% include "experience.njk" %}
+    {% include "projects.njk" %}
+    {% include "education.njk" %}
+    {% include "contact.njk" %}
+</div>
+{% endblock content %}
+
+{% block footer %}
+{% include "footer.njk" %}
+{% endblock footer %}

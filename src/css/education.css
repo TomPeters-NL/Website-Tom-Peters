@@ -1,0 +1,44 @@
+#education-terminal {
+    background-color: var(--color-darker);
+    border-left: 0.5vw solid var(--color-tertiary);
+    font: var(--font-code);
+
+    padding: 1vh;
+}
+
+.education-response {
+    padding: 30px 40px;
+}
+
+.education-study {
+    padding-bottom: 2vh;
+}
+
+.study-row-start {
+    padding-bottom: 1vh;
+}
+
+.study-row {
+    display: flex;
+
+    padding-bottom: 0.5vh;
+}
+
+.study-property {
+    flex: 1;
+    flex-shrink: 0;
+
+    padding-right: 1rem;
+    text-align: end;
+}
+
+.study-value {
+    flex: 6;
+    text-align: justify;
+
+    hyphens: auto;
+}
+
+.study-project.padding {
+    padding-bottom: 0.25vh;
+}

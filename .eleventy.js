@@ -1,6 +1,4 @@
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addWatchTarget("./src/php");
-    eleventyConfig.addPassthroughCopy("./src/php");
     eleventyConfig.addWatchTarget("./src/css");
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addWatchTarget("./src/js");
@@ -9,6 +7,19 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/img");
     eleventyConfig.addWatchTarget("./src/media");
     eleventyConfig.addPassthroughCopy("./src/media");
+
+    eleventyConfig.addNunjucksFilter('repeat', function (string, count) {
+        return string.repeat(count);
+    });
+
+    eleventyConfig.addNunjucksFilter('mysqlRow', function (name, commandLength) {
+        const prefix = '| ';
+        const suffix = '|';
+
+        const characterCount = prefix.length + suffix.length + name.length;
+
+        return prefix + name + '&nbsp;'.repeat(commandLength - characterCount) + suffix;
+    });
 
     return {
         dir: {

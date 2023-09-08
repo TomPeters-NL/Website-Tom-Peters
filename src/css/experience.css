@@ -1,0 +1,28 @@
+.experience-chapter {
+    background-color: var(--color-darker);
+    border-left: 0.5vw solid var(--color-tertiary);
+
+    padding: 1vh;
+
+    font: var(--font-code);
+}
+
+.experience-period, .experience-position, .experience-description {
+    padding-left: 1vw;
+}
+
+.experience-period, .experience-position {
+    padding-bottom: 1vw;
+}
+
+.experience-description {
+    display: inline-flex;
+}
+
+.experience-description-index {
+    flex-shrink: 0;
+}
+
+.experience-spacer {
+    height: 4vh;
+}
