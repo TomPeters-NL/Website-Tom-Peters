@@ -3,5 +3,55 @@
         <div class="section-header">
             Contact
         </div>
+        <div id="contact-file">
+            <div id="contact-file-start">
+            <span class="highlight-red">{{ '\<?php' }}</span>
+            <br><br>
+            <span class="highlight-purple">declare</span>(strict_types=1);
+            <br><br>
+            <span class="highlight-purple">namespace</span> Tom\Website\Controller;
+            <br><br>
+            <span class="highlight-purple">class</span> ContactController <span class="highlight-purple">extends</span> AbstractController<br>
+            {
+            </div>
+            <div id="contact-file-class">
+                <div class="contact-file-function">
+                    <span class="highlight-grey">#[Route('/link/linkedin', name: 'linkedin')]</span><br>
+                    <span class="highlight-purple">public function</span> goToLinkedIn(): RedirectResponse<br>
+                    {
+                    <div class="contact-file-function-content">
+                        <span class="highlight-red">$address</span> = 'https://www.linkedin.com/in/1992-tom-peters/';
+                        <br><br>
+                        <a class="contact-link" href="https://www.linkedin.com/in/1992-tom-peters/">
+                            <span class="highlight-purple">return</span> <span class="highlight-red">$this</span>->redirect(<span class="highlight-red">$address</span>);
+                        </a>
+                    </div>
+                    }
+                </div>
+                <br>
+                <div class="contact-file-function">
+                    <span class="highlight-grey">#[Route('/email/send', name: 'send_email')]</span><br>
+                    <span class="highlight-purple">public function</span> sendEmail(MailerInterface <span class="highlight-red">$mailer</span>): void<br>
+                    {
+                    <div class="contact-file-function-content">
+                        <span class="highlight-red">$emailAddress</span> = 'professional@tompeters.dev';
+                        <br><br>
+                        <span class="highlight-red">$email</span> = <span class="highlight-purple">new</span> <span class="highlight-green">Email</span>();<br>
+                        <span class="highlight-red">$email</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;->setFrom('You')<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;->setTo(<span class="highlight-red">$emailAddress</span>);
+
+                        <br><br>
+                        <a class="contact-link" href="mailto:professional@tompeters.dev">
+                            <span class="highlight-red">$mailer</span>->send(<span class="highlight-red">$email</span>);
+                        </a>
+                    </div>
+                    }
+                </div>
+            </div>
+            <div id="contact-file-end">
+            }
+            </div>
+        </div>
     </div>
 </section>
