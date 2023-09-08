@@ -1,4 +1,4 @@
-#footer {
+footer {
     height: 25vh;
     width: 100vw;
 
@@ -51,7 +51,5 @@
 }
 
 .footer-contact-icon:hover {
-    height: 5vh;
-
     fill: var(--color-text-secondary);
 }

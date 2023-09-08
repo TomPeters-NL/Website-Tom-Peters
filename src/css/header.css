@@ -1,0 +1,62 @@
+header {
+    height: 0vh;
+    width: 100vw;
+
+    overflow: hidden;
+    transition: height 0.25s ease;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--color-darker);
+    border-bottom: 0.25vh solid var(--color-secondary);
+    font: var(--font-code);
+}
+
+#header-home,
+#header-linkedin,
+#header-navbar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#header-home,
+#header-linkedin {
+    flex: 1;
+    flex-shrink: 0;
+}
+
+#header-navbar {
+    flex: 8;
+
+    justify-content: space-around;
+}
+
+.header-icon {
+    height: 5vh;
+    width: 5vh;
+
+    fill: var(--color-text);
+    stroke: var(--color-text);
+    transition: 0.25s;
+}
+
+.header-icon:hover {
+    fill: var(--color-text-secondary);
+    stroke: var(--color-text-secondary);
+}
+
+.header-navigation-selector {
+    display: none;
+}
+
+.header-navigation-link:hover {
+    text-decoration: underline;
+}
