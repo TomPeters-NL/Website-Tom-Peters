@@ -21,7 +21,7 @@
 .study-row {
     display: flex;
 
-    padding-bottom: 0.5vh;
+    padding-bottom: 1vh;
 }
 
 .study-property {
@@ -40,5 +40,5 @@
 }
 
 .study-project.padding {
-    padding-bottom: 0.25vh;
+    padding-bottom: 1vh;
 }

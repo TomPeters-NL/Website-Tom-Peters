@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1280px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .content-container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .project-details {
+        padding: calc(10px - 0.5vh) 10px;
+    }
+
+    .project-value {
+        padding-left: 1vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+}
