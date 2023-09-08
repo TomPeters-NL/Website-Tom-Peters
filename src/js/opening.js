@@ -5,7 +5,6 @@ jQuery(function ($) {
 
     $(document).on('scroll', function () {
         scrollPosition = $(this).scrollTop();
-        console.log(scrollPosition);
 
         backgroundSize = initialBackgroundSize + (0.05 * scrollPosition);
         if (backgroundSize <= 75) {

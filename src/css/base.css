@@ -1,7 +1,8 @@
 :root {
-    --color-primary: rgba(40, 40, 50, 1);
+    --color-primary: #282832;
     --color-secondary: #8C8CAA;
     --color-tertiary: #616178;
+    --color-darker: #23232C;
     --color-text: #FFFFFF;
     --color-text-secondary: #878CAA;
     --color-text-tertiary: #555564;
@@ -12,8 +13,9 @@
     --color-emphasis-red: #FF7D7D;
     --color-emphasis-red-dark: #C86464;
 
+    --font-anicon: 'Anicons Regular';
     --font-text: normal normal 400 1rem/1.5 Inter;
-    --font-code: normal normal 400 1rem "JetBrains Mono";
+    --font-code: normal normal 400 1rem 'JetBrains Mono';
     --font-quote: italic normal 200 1.25rem Montserrat;
     --font-header: normal normal 400 2rem Montserrat;
     --font-header-emphasized: normal normal 500 2rem Montserrat;
@@ -57,6 +59,22 @@ a:hover {
     margin-right: 20vw;
 }
 
+.dark {
+    background-color: var(--color-darker);
+}
+
+.highlight-purple {
+    color: var(--color-emphasis-purple);
+}
+
+.highlight-green {
+    color: var(--color-emphasis-green);
+}
+
+.highlight-red {
+    color: var(--color-emphasis-red);
+}
+
 section {
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -64,6 +82,7 @@ section {
 
 .section-header {
     font: var(--font-header-section);
+    margin-bottom: 2vh;
 }
 
 .section-subheader {
@@ -79,4 +98,22 @@ section {
 
 .emphasis {
     font-style: italic;
+}
+
+.collapsible {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.collapsible-icon {
+    height: 0.5rem;
+    width: 0.5rem;
+
+    transition: all 0.5s;
+    transform: rotate(0);
+}
+
+.rotate {
+    transform: rotate(90deg);
 }
