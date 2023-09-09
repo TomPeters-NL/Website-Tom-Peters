@@ -113,3 +113,8 @@ section {
 .rotate {
     transform: rotate(90deg);
 }
+
+.justify {
+    text-align: justify;
+    hyphens: auto;
+}

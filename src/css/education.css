@@ -18,6 +18,10 @@
     padding-bottom: 1vh;
 }
 
+.study-row-start-mobile {
+    display: none;
+}
+
 .study-row {
     display: flex;
 
@@ -34,11 +38,12 @@
 
 .study-value {
     flex: 6;
-    text-align: justify;
-
-    hyphens: auto;
 }
 
 .study-project.padding {
     padding-bottom: 1vh;
+}
+
+.study-row-description-mobile {
+    display: none;
 }

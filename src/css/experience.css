@@ -1,4 +1,5 @@
-.experience-chapter {
+.experience-chapter,
+.experience-chapter-mobile {
     background-color: var(--color-darker);
     border-left: 0.5vw solid var(--color-tertiary);
 
@@ -7,7 +8,13 @@
     font: var(--font-code);
 }
 
-.experience-period, .experience-position, .experience-description {
+.experience-chapter-mobile {
+    display: none;
+}
+
+.experience-period,
+.experience-position,
+.experience-description {
     padding-left: 1vw;
 }
 

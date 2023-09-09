@@ -11,16 +11,16 @@
             <br><br>
             <span class="highlight-purple">namespace</span> Tom\Website\Controller;
             <br><br>
-            <span class="highlight-purple">class</span> ContactController <span class="highlight-purple">extends</span> AbstractController<br>
+            <span class="highlight-purple">class</span> ContactController <span class="mobile-incompatible"><span class="highlight-purple">extends</span> AbstractController</span><br>
             {
             </div>
             <div id="contact-file-class">
                 <div class="contact-file-function">
-                    <span class="highlight-grey">#[Route('/link/linkedin', name: 'linkedin')]</span><br>
-                    <span class="highlight-purple">public function</span> goToLinkedIn(): RedirectResponse<br>
+                    <span class="highlight-grey">#[Route('/link/linkedin'<span class="mobile-incompatible">, name: 'linkedin')</span>]</span><br>
+                    <span class="highlight-purple">public function</span> goToLinkedIn()<span class="mobile-incompatible">: RedirectResponse</span><br>
                     {
                     <div class="contact-file-function-content">
-                        <span class="highlight-red">$address</span> = 'https://www.linkedin.com/in/1992-tom-peters/';
+                        <span class="highlight-red">$address</span> = '<span class="mobile-incompatible">https://www.linkedin.com</span>/in/1992-tom-peters/';
                         <br><br>
                         <a class="contact-link" href="https://www.linkedin.com/in/1992-tom-peters/" target="_blank" rel="noopener noreferrer">
                             <span class="highlight-purple">return</span> <span class="highlight-red">$this</span>->redirect(<span class="highlight-red">$address</span>);
@@ -30,16 +30,16 @@
                 </div>
                 <br>
                 <div class="contact-file-function">
-                    <span class="highlight-grey">#[Route('/email/send', name: 'send_email')]</span><br>
-                    <span class="highlight-purple">public function</span> sendEmail(MailerInterface <span class="highlight-red">$mailer</span>): void<br>
+                    <span class="highlight-grey">#[Route('/email/send'<span class="mobile-incompatible">, name: 'send_email')</span>]</span><br>
+                    <span class="highlight-purple">public function</span> sendEmail(<span class="mobile-incompatible">MailerInterface </span><span class="highlight-red">$mailer</span>)<span class="mobile-incompatible">: void</span><br>
                     {
                     <div class="contact-file-function-content">
-                        <span class="highlight-red">$emailAddress</span> = 'professional@tompeters.dev';
+                        <span class="highlight-red">$me</span> = 'professional@tompeters.dev';
                         <br><br>
                         <span class="highlight-red">$email</span> = <span class="highlight-purple">new</span> <span class="highlight-green">Email</span>();<br>
                         <span class="highlight-red">$email</span><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;->setFrom('You')<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;->setTo(<span class="highlight-red">$emailAddress</span>);
+                        &nbsp;&nbsp;&nbsp;&nbsp;->setTo(<span class="highlight-red">$me</span>);
 
                         <br><br>
                         <a class="contact-link" href="mailto:professional@tompeters.dev" target="_blank" rel="noopener noreferrer">

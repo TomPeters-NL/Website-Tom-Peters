@@ -61,9 +61,18 @@
                     {% for study in collections.education | reverse %}
                     {% set study = study.data %}
                     <div class="education-study">
+                        {# START - Regular row start. #}
                         <div class="study-row-start">
                             {{ '*' | repeat(27) + ' ' + loop.index + '. row ' + '*' | repeat(27)}}
                         </div>
+                        {# END - Regular row start. #}
+
+                        {# START - Mobile-compatible row start. #}
+                        <div class="study-row-start-mobile">
+                            {{ '*' | repeat(10) + ' ' + loop.index + '. row ' + '*' | repeat(10)}}
+                        </div>
+                        {# END - Mobile-compatible row start. #}
+
                         <div class="study-row">
                             <div class="study-property">
                                 start:
@@ -100,15 +109,30 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="study-row">
+
+                        {# START - Regular row start. #}
+                        <div class="study-row study-row-description">
                             <div class="study-property">
                                 description:
                             </div>
-                            <div class="study-value">
+                            <div class="study-value justify">
                                 {{ study.description }}
                             </div>
                         </div>
-                        <div class="study-row">
+                        {# END - Regular row start. #}
+
+                        {# START - Mobile-compatible row start. #}
+                        <div class="study-row study-row-description-mobile">
+                            <div class="study-property-mobile">
+                                description:
+                            </div>
+                            <div class="study-value-mobile justify">
+                                {{ study.description }}
+                            </div>
+                        </div>
+                        {# END - Mobile-compatible row start. #}
+
+                        <div class="study-row mobile-incompatible">
                             <div class="study-property">
                                 projects:
                             </div>
@@ -116,7 +140,7 @@
                                 <div class="study-projects">
                                     {% set projectCount = study.projects | length %}
                                     {% for project in study.projects %}
-                                    <div class="study-project {% if loop.index < projectCount %}padding{% endif %}">
+                                    <div class="study-project justify {% if loop.index < projectCount %}padding{% endif %}">
                                         > {{ project }}
                                     </div>
                                     {% endfor %}

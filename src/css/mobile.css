@@ -1,0 +1,130 @@
+@media only screen and (max-width: 768px) {
+    /* Base */
+
+    :root {
+        font-size: 12px;
+    }
+
+    .content-container {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .mobile-incompatible {
+        display: none;
+    }
+
+    .section-header {
+        text-align: center;
+    }
+
+    /* Opening */
+
+    #opening-spacer {
+        display: none;
+    }
+
+    #opening {
+        position: inherit;
+        bottom: 0;
+    }
+
+    #opening-header, #opening-logo-container {
+        width: fit-content;
+        margin: auto;
+    }
+
+    #opening-header {
+        padding-top: 1vh;
+    }
+
+    #opening-logo-container {
+        padding-top: 5vh;
+    }
+
+    #opening-logo {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    #opening-navbar {
+        padding-top: 0vh;
+        flex-direction: column;
+    }
+
+    .opening-navbar-item {
+        padding-top: 2.5vh;
+    }
+
+    /* Experience */
+
+    .experience-chapter {
+        display: none;
+    }
+
+    .experience-chapter-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-row {
+        padding-bottom: 2.5vh;
+    }
+
+    /* Projects */
+
+    .project-description {
+        display: none;
+    }
+
+    .project-detail-mobile {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+
+    .project-value-mobile {
+        padding-top: 0.5vh;
+    }
+
+    /* Education */
+
+    .education-response {
+        padding: 15px 20px;
+    }
+
+    .study-row-start {
+        display: none;
+    }
+
+    .study-row-start-mobile {
+        display: inline-flex;
+
+        padding-bottom: 1vh;
+    }
+
+    .study-row-description {
+        display: none;
+    }
+
+    .study-row-description-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .study-property-mobile {
+        padding-bottom: 1vh;
+    }
+}
