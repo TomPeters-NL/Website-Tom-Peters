@@ -26,6 +26,30 @@
         text-align: center;
     }
 
+    /* Reset Position */
+
+    #reset-position {
+        display: inherit;
+        position: fixed;
+
+        bottom: 2vh;
+        right: 2vh;
+
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #reset-position-icon {
+        height: 5vh;
+
+        fill: var(--color-text);
+        transition: 0.25s;
+    }
+
+    #reset-position-icon:hover {
+        fill: var(--color-text-secondary);
+    }
+
     /* Opening */
 
     #opening-spacer {
