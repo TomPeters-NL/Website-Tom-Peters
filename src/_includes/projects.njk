@@ -28,10 +28,19 @@
                         <span class="project-value highlight-green">{{ project.role }}</span>
                     </div>
 
-                    <div class="project-detail">
+                    {# START - Regular project description. #}
+                    <div class="project-detail project-description">
                         <span class="project-property">description:</span>
-                        <span class="project-value">{{ project.description }}</span>
+                        <span class="project-value justify">{{ project.description }}</span>
                     </div>
+                    {# END - Regular project description. #}
+
+                    {# START - Mobile-compatible project description. #}
+                    <div class="project-detail-mobile">
+                        <span class="project-property-mobile">description:</span>
+                        <span class="project-value-mobile justify">{{ project.description }}</span>
+                    </div>
+                    {# END - Mobile-compatible project description. #}
 
                     <div class="project-detail">
                         <span class="project-property">skillset:</span>

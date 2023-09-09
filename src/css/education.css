@@ -18,10 +18,14 @@
     padding-bottom: 1vh;
 }
 
+.study-row-start-mobile {
+    display: none;
+}
+
 .study-row {
     display: flex;
 
-    padding-bottom: 0.5vh;
+    padding-bottom: 1vh;
 }
 
 .study-property {
@@ -34,11 +38,12 @@
 
 .study-value {
     flex: 6;
-    text-align: justify;
-
-    hyphens: auto;
 }
 
 .study-project.padding {
-    padding-bottom: 0.25vh;
+    padding-bottom: 1vh;
+}
+
+.study-row-description-mobile {
+    display: none;
 }

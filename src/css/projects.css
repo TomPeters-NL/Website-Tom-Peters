@@ -18,6 +18,10 @@
     padding-bottom: 0.5vh;
 }
 
+.project-detail-mobile {
+    display: none;
+}
+
 .project-property {
     flex: 1;
     flex-shrink: 0;

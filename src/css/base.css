@@ -5,20 +5,14 @@
     --color-darker: #23232C;
     --color-text: #FFFFFF;
     --color-text-secondary: #878CAA;
-    --color-text-tertiary: #555564;
     --color-emphasis-green: #64C864;
-    --color-emphasis-green-dark: #80FF80;
     --color-emphasis-purple: #AA80FF;
-    --color-emphasis-purple-dark: #8564C8;
     --color-emphasis-red: #FF7D7D;
-    --color-emphasis-red-dark: #C86464;
 
-    --font-anicon: 'Anicons Regular';
     --font-text: normal normal 400 1rem/1.5 Inter;
     --font-code: normal normal 400 1rem 'JetBrains Mono';
     --font-quote: italic normal 200 1.25rem Montserrat;
     --font-header: normal normal 400 2rem Montserrat;
-    --font-header-emphasized: normal normal 500 2rem Montserrat;
     --font-header-section: normal normal 500 4rem Montserrat;
     --font-header-attention: normal normal 900 6rem Montserrat;
 
@@ -118,4 +112,13 @@ section {
 
 .rotate {
     transform: rotate(90deg);
+}
+
+.justify {
+    text-align: justify;
+    hyphens: auto;
+}
+
+#reset-position {
+    display: none;
 }
