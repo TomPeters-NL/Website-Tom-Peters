@@ -1,5 +1,6 @@
 ---
 tags: projects
+position: 8
 name: CardBoard CX
 host: 3Fiftynine
 role: Back-end Developer

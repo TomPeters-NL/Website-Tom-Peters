@@ -1,5 +1,6 @@
 ---
 tags: projects
+position: 10
 name: Anoctua
 host: 3Fiftynine
 role: Lead Back-end Developer

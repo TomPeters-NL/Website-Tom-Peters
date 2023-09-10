@@ -1,5 +1,6 @@
 ---
 tags: projects
+position: 2
 name: Lake Hämelsee
 host: University of Amsterdam
 role: Researcher, Coring Crew, Student

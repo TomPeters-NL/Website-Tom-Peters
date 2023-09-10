@@ -1,5 +1,6 @@
 ---
 tags: projects
+position: 9
 name: Cerberus
 host: 3Fiftynine
 role: Lead Back-end Developer

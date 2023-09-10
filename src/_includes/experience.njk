@@ -11,7 +11,7 @@
             <div class="experience-period">
                 'start' => '{{ experience.start }}',
                 <br>
-                'end' &nbsp;&nbsp;=> {{ experience.end }},
+                'end' &nbsp;&nbsp;=> {% if experience.end !== 'null' %}'{{ experience.end }}'{% else %}{{ experience.end }}{% endif %},
             </div>
             <div class="experience-position">
                 'company' &nbsp;=> '{{ experience.company }}',

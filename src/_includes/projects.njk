@@ -7,7 +7,7 @@
             {% set directory = '<span class="highlight-purple">tom@PERSONAL-WEBSITE</span>:/$' | safe %}
             {{ directory }} projects=getProjects
 
-            {% for project in collections.projects %}
+            {% for project in collections.projectsByPosition %}
             {% set project = project.data %}
             <div class="project">
                 {{ directory }} display projects[{{ loop.index0 }}]

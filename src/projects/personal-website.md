@@ -1,5 +1,6 @@
 ---
 tags: projects
+position: 11
 name: TomPeters.Dev
 host: Self
 role: Full-stack Developer

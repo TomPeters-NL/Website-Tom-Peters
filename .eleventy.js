@@ -8,6 +8,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/media");
     eleventyConfig.addPassthroughCopy("./src/media");
 
+    eleventyConfig.addCollection('projectsByPosition', function (collectionApi) {
+        return collectionApi.getFilteredByTag('projects').sort(function (a, b) {
+            return b.data.position - a.data.position;
+        });
+    });
+
     eleventyConfig.addNunjucksFilter('repeat', function (string, count) {
         return string.repeat(count);
     });

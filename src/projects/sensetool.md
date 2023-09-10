@@ -1,5 +1,6 @@
 ---
 tags: projects
+position: 6
 name: Sensetool
 host: 3Fiftynine, SOA Aids Nederland
 role: Back-end Developer
