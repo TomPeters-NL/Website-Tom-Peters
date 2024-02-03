@@ -4,7 +4,7 @@
             Experience
         </div>
         {% set experienceCount = collections.experiences | length %}
-        {% for experience in collections.experiences %}
+        {% for experience in collections.experiencesByPosition %}
         {% set experience = experience.data %}
         <div class="experience-chapter">
             [
@@ -16,7 +16,7 @@
             <div class="experience-position">
                 'company' &nbsp;=> '{{ experience.company }}',
                 <br>
-                'position' => '<span class="highlight-purple">{{ experience.position }}</span>',
+                'position' => '<span class="highlight-purple">{{ experience.function }}</span>',
             </div>
             <div class="experience-description">
                 <div class="experience-description-index">'description' =>&nbsp;</div>
@@ -46,7 +46,7 @@
             <div class="experience-row">
                 <div class="experience-row-property">position</div>
                 <div class="experience-row-separator">{{ '-' | repeat(13) }}</div>
-                <div class="experience-row-value highlight-purple">{{ experience.position }}</div>
+                <div class="experience-row-value highlight-purple">{{ experience.function }}</div>
             </div>
             <div class="experience-row">
                 <div class="experience-row-property">description</div>
