@@ -1,7 +1,4 @@
 # Personal Website: Tom Peters
-![pipeline](https://gitlab.com/the-nihilum-order/websites/tom-peters/badges/main/pipeline.svg?ignore_skipped=true)
-![release](https://gitlab.com/the-nihilum-order/websites/tom-peters/-/badges/release.svg)
-
 ## Introduction
 This is the repository for the personal website of Tom Peters, MSc.
 
