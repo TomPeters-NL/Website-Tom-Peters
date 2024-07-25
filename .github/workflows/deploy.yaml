@@ -1,0 +1,18 @@
+name: Deploy Website
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Load Github repository
+        uses: actions/checkout@v4
+      - name: Configure Node.js
+        uses: actions/setup-node@v4
+      - name: Install NPM packages
+        run: npm install
+      - name: Build Eleventy
+        run: npx @11ty/eleventy
