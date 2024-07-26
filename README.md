@@ -1,22 +1,27 @@
-# Personal Website: Tom Peters
-## Introduction
-This is the repository for the personal website of Tom Peters, MSc.
+# 🌑 Personal Website: Tom Peters 🌑
 
-The website is built using the static website generator Eleventy, with the primary templating language being HTML.
+## 🌟 Introduction
+It is nice to have a dedicated space on the internet all to yourself, be it for online representation, fun, or experimenting (which is fun).
 
-## Domains
-The personal website will be hosted at https://tompeters.dev/.
+So, here it is. A personal website dedicated to me, Tom Peters. 🙂
 
-## Technology
-- [Eleventy](https://www.11ty.dev/)
+## 📝 Requirements
+- **Node.js**. Required for NPM.
+- **NPM**. Required for installing dependencies and building the static website.
 
-## Eleventy Commands
-Base: `npx @11ty/eleventy`
+## 🤖 Technology
+- [Eleventy](https://www.11ty.dev/).
 
-Options:
-- `--input={dir}`: Define directory to be written to output directory.
-- `--output={dir}`: Define directory for output to be written to.
-- `--serve`: Serve the output on a Browsersync web server, which refreshes automatically.
-- `--port={number}`: Define the port from which the website is served.
-- `--quiet`: Reduce console logging.
-- `--dryrun`: Runs Eleventy without writing files.
+## 🥷 Cheatsheet
+| Goal            | Command              |
+|-----------------|----------------------|
+| Build assets.   | `npx @11ty/eleventy` |
+
+| Build Option                                          | Syntax            |
+|-------------------------------------------------------|-------------------|
+| Define input directory.                               | `--input={dir}`   |
+| Define output directory.                              | `--output={dir}`  |
+| Serve output on a Browsersync web server.             | `--serve`         |
+| Define the website port.                              | `--port={number}` |
+| Reduce console logging.                               | `--quiet`         |
+| Run the Eleventy build process without writing files. | `--dryrun`        |
