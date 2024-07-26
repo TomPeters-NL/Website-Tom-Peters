@@ -1,5 +1,5 @@
-## 🌟 Summary 🌟
+## 🌟 Summary.
 This pull request...
 
-## 📝 Changelog 📝
+## 📝 Changelog.
 -
